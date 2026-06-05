@@ -1,40 +1,88 @@
-<section class="contact">
-  <h2>Get in Touch 💛</h2>
+<section class="page-hero">
+  <div class="container">
+    <span class="eyebrow">Kontakt</span>
+    <h1>Kontakt aufnehmen</h1>
+    <p>Ich freue mich auf Ihre Nachricht. Das Erstgespräch ist kostenlos und unverbindlich.</p>
+  </div>
+</section>
 
-  <form *ngIf="!submitted" (ngSubmit)="onSubmit()" #contactForm="ngForm">
+<section class="contact-section">
+  <div class="container">
+    <div class="contact-grid">
+      <div class="contact-info">
+        <h2>So erreichen Sie mich</h2>
 
-    <input 
-      type="text" 
-      name="name" 
-      placeholder="Your Name"
-      ngModel 
-      required
-    />
+        <div class="info-item">
+          <span class="info-label">Telefon</span>
+          <a href="tel:+4917632912002">0176 32912002</a>
+        </div>
 
-    <input 
-      type="email" 
-      name="email" 
-      placeholder="Your Email"
-      ngModel 
-      required
-      email
-    />
+        <div class="info-item">
+          <span class="info-label">E-Mail</span>
+          <a href="mailto:coaching@jana-wanzek.de">coaching&#64;jana-wanzek.de</a>
+        </div>
 
-    <textarea 
-      name="message" 
-      placeholder="Your Message"
-      ngModel 
-      required
-    ></textarea>
+        <div class="info-item">
+          <span class="info-label">Instagram</span>
+          <a href="https://instagram.com/ent.wicklungsraum.coaching" target="_blank" rel="noopener noreferrer">
+            &#64;ent.wicklungsraum.coaching
+          </a>
+        </div>
 
-    <button type="submit" [disabled]="contactForm.invalid">
-      Send Message
-    </button>
+        <div class="info-item">
+          <span class="info-label">Standort</span>
+          <span>Bremen – deutschlandweit & online</span>
+        </div>
+      </div>
 
-  </form>
+      <div class="form-wrapper">
+        <form *ngIf="!submitted" (ngSubmit)="onSubmit()" #contactForm="ngForm">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input
+              id="name"
+              type="text"
+              name="name"
+              placeholder="Ihr Name"
+              ngModel
+              required
+            />
+          </div>
 
- <p *ngIf="submitted" class="success-message">
-    ✅ Message sent successfully!
-  </p>
+          <div class="form-group">
+            <label for="email">E-Mail</label>
+            <input
+              id="email"
+              type="email"
+              name="email"
+              placeholder="Ihre E-Mail-Adresse"
+              ngModel
+              required
+              email
+            />
+          </div>
 
+          <div class="form-group">
+            <label for="message">Nachricht</label>
+            <textarea
+              id="message"
+              name="message"
+              placeholder="Wie kann ich Ihnen helfen?"
+              ngModel
+              required
+              rows="5"
+            ></textarea>
+          </div>
+
+          <button type="submit" [disabled]="contactForm.invalid">
+            Nachricht senden
+          </button>
+        </form>
+
+        <div *ngIf="submitted" class="success-message">
+          <p>Vielen Dank für Ihre Nachricht! Ich melde mich so schnell wie möglich bei Ihnen.</p>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>

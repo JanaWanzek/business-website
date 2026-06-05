@@ -1,39 +1,76 @@
 .hero {
-  height: 80vh;
+  min-height: 88vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(to right, #fdfbfb, #ebedee);
+  background: linear-gradient(160deg, #FDFCFA 0%, #EDE9E3 100%);
   text-align: center;
+  padding: 80px 24px;
 }
 
 .hero-content {
-  max-width: 600px;
+  max-width: 680px;
+}
+
+.eyebrow {
+  display: inline-block;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--primary-light);
+  margin-bottom: 20px;
 }
 
 h1 {
-  font-size: 3rem;
-  margin-bottom: 20px;
-  color: #222;
+  font-size: clamp(2.8rem, 7vw, 5rem);
+  color: var(--text-dark);
+  margin: 0 0 16px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
 }
 
-p {
+.subtitle {
   font-size: 1.2rem;
-  margin-bottom: 30px;
-  color: #555;
+  color: var(--text-medium);
+  font-weight: 300;
+  margin: 0 0 28px;
+  letter-spacing: 0.5px;
+  font-family: 'Inter', sans-serif;
 }
 
-button {
-  padding: 12px 25px;
-  border: none;
-  background: #007bff;
+.divider {
+  width: 48px;
+  height: 2px;
+  background: var(--accent);
+  margin: 0 auto 28px;
+  border-radius: 2px;
+}
+
+.tagline {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.1rem;
+  color: var(--text-light);
+  letter-spacing: 1px;
+  font-style: italic;
+  margin: 0 0 44px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 14px 38px;
+  background: var(--primary);
   color: white;
-  font-size: 1rem;
-  border-radius: 25px;
-  cursor: pointer;
-  transition: 0.3s;
-}
+  border-radius: 4px;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  transition: background 0.25s ease, transform 0.2s ease;
+  text-decoration: none;
 
-button:hover {
-  background: #0056b3;
+  &:hover {
+    background: var(--primary-dark);
+    transform: translateY(-2px);
+  }
 }

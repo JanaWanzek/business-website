@@ -1,15 +1,19 @@
-<nav>
+<nav [class.scrolled]="scrolled">
   <div class="container">
+    <a routerLink="/home" class="logo">Jana Wanzek</a>
 
-    <h2 class="logo">Jana</h2>
+    <button class="menu-toggle" (click)="toggleMenu()" aria-label="Menü öffnen">
+      <span [class.open]="menuOpen"></span>
+      <span [class.open]="menuOpen"></span>
+      <span [class.open]="menuOpen"></span>
+    </button>
 
-    <ul>
-      <li><a routerLink="/home">Home</a></li>
-      <li><a routerLink="/services">Services</a></li>
-      <li><a routerLink="/workshops">Workshops</a></li>
-      <li><a routerLink="/coaching">Coaching</a></li>
-      <li><a routerLink="/contact">Contact</a></li>
+    <ul [class.open]="menuOpen">
+      <li><a routerLink="/home" routerLinkActive="active" (click)="closeMenu()">Startseite</a></li>
+      <li><a routerLink="/organisationen" routerLinkActive="active" (click)="closeMenu()">Für Organisationen</a></li>
+      <li><a routerLink="/coaching" routerLinkActive="active" (click)="closeMenu()">Coaching</a></li>
+      <li><a routerLink="/workshops" routerLinkActive="active" (click)="closeMenu()">Workshops</a></li>
+      <li><a routerLink="/kontakt" routerLinkActive="active" (click)="closeMenu()">Kontakt</a></li>
     </ul>
-
   </div>
 </nav>
