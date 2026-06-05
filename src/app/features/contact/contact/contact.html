@@ -1,0 +1,40 @@
+<section class="contact">
+  <h2>Get in Touch 💛</h2>
+
+  <form *ngIf="!submitted" (ngSubmit)="onSubmit()" #contactForm="ngForm">
+
+    <input 
+      type="text" 
+      name="name" 
+      placeholder="Your Name"
+      ngModel 
+      required
+    />
+
+    <input 
+      type="email" 
+      name="email" 
+      placeholder="Your Email"
+      ngModel 
+      required
+      email
+    />
+
+    <textarea 
+      name="message" 
+      placeholder="Your Message"
+      ngModel 
+      required
+    ></textarea>
+
+    <button type="submit" [disabled]="contactForm.invalid">
+      Send Message
+    </button>
+
+  </form>
+
+ <p *ngIf="submitted" class="success-message">
+    ✅ Message sent successfully!
+  </p>
+
+</section>

@@ -1,0 +1,59 @@
+/* You can add global styles to this file, and also import other style files */
+:root {
+  --primary: #6c63ff;
+  --primary-dark: #5548d9;
+
+  --text-dark: #222;
+  --text-light: #555;
+
+  --background-light: #f9f9f9;
+  --background-white: #ffffff;
+}
+section{
+    
+    padding: 80px 20px;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+section {
+  animation: fadeIn 0.6s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+button {
+  background: var(--primary);
+  color: white;
+  border: none;
+  border-radius: 30px;
+  padding: 12px 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background: var(--primary-dark);
+  transform: scale(1.05);
+}
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #fdfdfd;
+}
