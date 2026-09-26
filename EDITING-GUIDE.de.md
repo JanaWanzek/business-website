@@ -38,8 +38,8 @@ Wenn eine Versionsnummer erscheint (z. B. `v20.x.x`), ist alles bereit.
 ## 2. Das Projekt öffnen
 
 1. Öffne **VS Code**.
-2. **File → Open Folder…** → den Projektordner `jana-website` auswählen.
-3. Öffne das eingebaute Terminal: **Terminal → New Terminal**.
+2. **File → Open Folder…** → den Projektordner `wanzek` auswählen, 
+3. Öffne das eingebaute Terminal: **Terminal → New Terminal**.then in the terminal choose the folder inside wanzek by typing "cd business-website". inside the business-website folder choose the "src folder " by typing "cd src ", then can you find yourself inside the working app..
 4. Nur beim allerersten Mal: Installiere die benötigten Pakete, indem du eintippst:
 
    ```

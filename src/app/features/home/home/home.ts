@@ -1,16 +1,24 @@
 import { Component } from '@angular/core';
+
 import { Hero } from '../components/hero/hero';
 import { ServicesPreview } from '../components/services-preview/services-preview';
 import { About } from '../components/about/about';
 import { Testimonials } from '../components/testimonials/testimonials';
-import { Faq } from '../components/faq/faq';
 import { Gift } from '../../../../features/home/component/gift/gift';
+import { Faq } from '../components/FAQ/faq';
 
 @Component({
-  standalone: true,
   selector: 'app-home',
-  imports: [Hero, ServicesPreview, About, Testimonials, Faq, Gift],
+  standalone: true,
+  imports: [
+    Hero,
+    ServicesPreview,
+    About,
+    Testimonials,
+    Gift,
+    Faq
+  ],
   templateUrl: './home.html',
-  styleUrl: './home.scss',
+  styleUrl: './home.scss'
 })
 export class Home {}

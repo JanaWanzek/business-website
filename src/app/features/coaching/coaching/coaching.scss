@@ -1,182 +1,740 @@
-.page-hero {
-  padding: 100px 24px 80px;
-  background: var(--background-light);
-  border-bottom: 1px solid var(--border-light);
+/* =========================
+   GEMEINSAM
+   ========================= */
 
-  .container {
-    max-width: 800px;
-    margin: 0 auto;
-  }
+.page-inner {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-.eyebrow {
-  display: inline-block;
-  font-size: 0.78rem;
-  font-weight: 600;
+.section-kicker {
+  margin: 0 0 18px;
+
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
   letter-spacing: 3px;
   text-transform: uppercase;
-  color: var(--primary-light);
-  margin-bottom: 12px;
+
+  color: #FA5039;
 }
 
-h1 {
-  font-size: clamp(2rem, 5vw, 3rem);
-  color: var(--text-dark);
-  margin: 0 0 20px;
+.section-kicker--light {
+  color: #F9F1E6;
 }
 
-.page-hero p {
-  font-size: 1.1rem;
-  color: var(--text-medium);
-  line-height: 1.7;
-  margin: 0;
-  max-width: 600px;
+/* =========================
+   HERO
+   ========================= */
+
+.individual-hero {
+  width: 100%;
+  background: #FA5039;
+  padding: 80px 0;
 }
 
-.content {
-  padding: 90px 24px;
-
-  .container {
-    max-width: 900px;
-    margin: 0 auto;
-  }
-}
-
-.intro-grid {
+.individual-hero__grid {
   display: grid;
-  grid-template-columns: 1.5fr 1fr;
-  gap: 48px;
-  align-items: start;
-  margin-bottom: 64px;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 50px;
+  align-items: center;
 }
 
-.text-block {
-  h2 {
-    font-size: 1.8rem;
-    color: var(--text-dark);
-    margin: 0 0 20px;
-  }
 
-  p {
-    color: var(--text-medium);
-    line-height: 1.8;
-    margin-bottom: 16px;
-  }
+/* TEXT */
+
+.individual-hero__content {
+  max-width: 680px;
 }
 
-.details-block {
-  background: var(--background-light);
-  border-radius: 8px;
-  border: 1px solid var(--border-light);
-  padding: 28px;
-}
+.individual-hero__label {
+  margin: 0 0 24px;
 
-.detail-item {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-  padding: 16px 0;
-  border-bottom: 1px solid var(--border-light);
-  font-size: 0.9rem;
-  color: var(--text-medium);
-
-  &:last-child {
-    border-bottom: none;
-    padding-bottom: 0;
-  }
-
-  &:first-child {
-    padding-top: 0;
-  }
-}
-
-.detail-label {
-  font-weight: 600;
-  font-size: 0.72rem;
-  letter-spacing: 1.5px;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 3px;
   text-transform: uppercase;
-  color: var(--primary-light);
+
+  color: #F9F1E6;
 }
 
-.topics {
-  margin-bottom: 64px;
+.individual-hero h1 {
+  margin: 0 0 28px;
 
-  h2 {
-    font-size: 1.8rem;
-    color: var(--text-dark);
-    margin: 0 0 24px;
-  }
+  font-family: 'Forma DJR', sans-serif;
+  font-size: clamp(50px, 5vw, 72px);
+  font-weight: 700;
+  line-height: 1.02;
 
-  ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 12px;
-  }
-
-  li {
-    padding: 14px 16px 14px 40px;
-    background: var(--background-light);
-    border-radius: 6px;
-    color: var(--text-medium);
-    font-size: 0.95rem;
-    position: relative;
-    border: 1px solid var(--border-light);
-
-    &::before {
-      content: '→';
-      position: absolute;
-      left: 14px;
-      color: var(--primary);
-    }
-  }
+  color: #F9F1E6;
 }
 
-.cta-block {
-  text-align: center;
-  padding: 56px 40px;
-  background: var(--background-light);
-  border-radius: 12px;
-  border: 1px solid var(--border-light);
+.individual-hero__text {
+  max-width: 650px;
+  margin: 0;
 
-  h2 {
-    font-size: 1.8rem;
-    color: var(--text-dark);
-    margin: 0 0 16px;
-  }
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.65;
 
-  p {
-    color: var(--text-medium);
-    margin: 0 auto 28px;
-    max-width: 500px;
-  }
+  color: #F9F1E6;
 }
 
-.btn {
+
+/* BILD */
+
+.individual-hero__visual {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.individual-hero__visual img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  display: block;
+
+  border-radius: 0 80px 0 80px;
+}
+
+/* =========================
+   MOBILE
+   ========================= */
+
+@media (max-width: 850px) {
+
+  .individual-hero {
+    padding: 60px 0;
+  }
+
+  .individual-hero__grid {
+    grid-template-columns: 1fr;
+    gap: 45px;
+  }
+
+  .individual-hero h1 {
+    font-size: clamp(44px, 12vw, 60px);
+  }
+
+  .individual-hero__text {
+    font-size: 17px;
+  }
+
+  .individual-hero__visual {
+    justify-content: flex-start;
+  }
+
+  .individual-hero__visual img {
+    max-width: 520px;
+  }
+}
+/* =========================
+   1:1 COACHING
+   ========================= */
+
+.coaching-one-to-one {
+  width: 100%;
+  background: #AEBBAA;
+  padding: 70px 24px 80px;
+}
+
+.coaching-one-to-one h2 {
+  max-width: 850px;
+  margin: 0 0 26px;
+
+  font-family: 'Forma DJR', sans-serif;
+  font-size: clamp(42px, 4.5vw, 60px);
+  font-weight: 700;
+  line-height: 1.05;
+
+  color: #F9F1E6;
+}
+
+.coaching-one-to-one__text {
+  width: 100%;
+  max-width: none;
+  margin: 0 0 32px;
+
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.65;
+  color: #F9F1E6;
+}
+
+.coaching-one-to-one__keywords {
+  margin-top: 46px;
+
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.coaching-one-to-one__keywords span {
+  display: flex;
+  align-items: center;
+  flex: 1;
+
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: clamp(26px, 2.5vw, 36px);
+  font-weight: 400;
+
+  color: #F9F1E6;
+}
+
+/* Rote Linie nach den ersten beiden Begriffen */
+.coaching-one-to-one__keywords span:not(:last-child)::after {
+  content: '';
+  height: 1px;
+  flex: 1;
+
+  margin-left: 32px;
+
+  background: #FA5039;
+}
+
+/* =========================
+   AVGS + BERATUNG
+   ========================= */
+
+.coaching-dual {
+  width: 100%;
+  background: #F9F1E6;
+  padding: 70px 24px 80px;
+}
+
+.coaching-dual__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+}
+
+.coaching-dual__column {
+  padding: 0 55px;
+}
+
+.coaching-dual__column--left {
+  padding-left: 0;
+}
+
+.coaching-dual__column--right {
+  padding-right: 0;
+  border-left: 1px solid #FA5039;
+}
+
+.coaching-dual h2 {
+  margin: 0 0 22px;
+
+  font-family: 'Forma DJR', sans-serif;
+  font-size: clamp(34px, 3.2vw, 46px);
+  font-weight: 700;
+  line-height: 1.1;
+
+  color: #FA5039;
+}
+
+.coaching-dual p {
+  margin: 0 0 20px;
+
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 17px;
+  line-height: 1.65;
+
+  color: #FA5039;
+}
+
+.coaching-avgs__button {
   display: inline-block;
-  padding: 13px 32px;
-  background: var(--primary);
-  color: white;
-  border-radius: 4px;
-  font-size: 0.95rem;
+  margin-top: 24px;
+  padding: 14px 24px;
+
+  background: #FA5039;
+  border: 1px solid #FA5039;
+
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 15px;
   font-weight: 500;
-  transition: background 0.25s ease, transform 0.2s ease;
+
+  color: #F9F1E6;
   text-decoration: none;
 
-  &:hover {
-    background: var(--primary-dark);
-    transform: translateY(-2px);
+  transition:
+    background 0.2s ease,
+    color 0.2s ease;
+}
+
+.coaching-avgs__button:hover {
+  background: transparent;
+  color: #FA5039;
+}
+
+.coaching-dual__note {
+  margin-top: 18px !important;
+  font-size: 14px !important;
+  color: #FA5039 !important;
+  opacity: 1;
+}
+
+/* =========================
+   RAHMEN & ANLIEGEN
+   ========================= */
+
+.coaching-details {
+  width: 100%;
+  background: #F9F1E6;
+  padding: 0 24px 90px;
+  box-sizing: border-box;
+}
+
+.coaching-details::before {
+  content: '';
+
+  display: block;
+  width: 100%;
+  max-width: 1200px;
+  height: 1px;
+
+  margin: 0 auto 70px;
+
+  background: #FA5039;
+}
+
+.coaching-details__grid {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: 0.95fr 1.05fr;
+  gap: 70px;
+
+  align-items: start;
+}
+
+
+/* =========================
+   GEMEINSAMES LABEL
+   ========================= */
+
+.coaching-details__label {
+  margin: 0 0 30px;
+
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+
+  color: #FA5039;
+}
+
+
+/* =========================
+   RAHMEN & INVESTITION
+   ========================= */
+
+.coaching-details__investment {
+  padding-right: 50px;
+
+  border-right: 1px solid rgba(250, 80, 57, 0.35);
+}
+
+.coaching-investment__item {
+  padding: 22px 0;
+
+  border-top: 1px solid rgba(173, 181, 167, 0.7);
+}
+
+.coaching-investment__item:first-of-type {
+  padding-top: 0;
+  border-top: 0;
+}
+
+.coaching-investment__item h3 {
+  margin: 0 0 8px;
+
+  font-family: 'Forma DJR', sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1.1;
+
+  color: #FA5039;
+}
+
+.coaching-investment__item p {
+  max-width: 470px;
+  margin: 0;
+
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.6;
+
+  color: #1A1A1A;
+}
+
+
+/* =========================
+   MÖGLICHE ANLIEGEN
+   ========================= */
+
+.coaching-details__topics {
+  padding-top: 0;
+}
+
+.coaching-topics {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  column-gap: 36px;
+}
+
+.coaching-topic {
+  padding: 14px 0;
+
+  border-top: 1px solid rgba(173, 181, 167, 0.7);
+
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.4;
+
+  color: #1A1A1A;
+}
+
+.coaching-topic:nth-child(1),
+.coaching-topic:nth-child(2) {
+  border-top: 0;
+  padding-top: 0;
+}
+
+
+/* =========================
+   TABLET
+   ========================= */
+
+@media (max-width: 850px) {
+
+  .coaching-details {
+    padding: 0 20px 70px;
+  }
+
+  .coaching-details::before {
+    margin-bottom: 55px;
+  }
+
+  .coaching-details__grid {
+    grid-template-columns: 1fr;
+    gap: 55px;
+  }
+
+  .coaching-details__investment {
+    padding-right: 0;
+    padding-bottom: 45px;
+
+    border-right: 0;
+    border-bottom: 1px solid rgba(250, 80, 57, 0.35);
   }
 }
 
-@media (max-width: 768px) {
-  .intro-grid {
+
+/* =========================
+   MOBILE
+   ========================= */
+
+@media (max-width: 550px) {
+
+  .coaching-topics {
     grid-template-columns: 1fr;
   }
 
-  .topics ul {
-    grid-template-columns: 1fr;
+  .coaching-topic:nth-child(2) {
+    border-top: 1px solid rgba(173, 181, 167, 0.7);
+    padding-top: 14px;
+  }
+
+  .coaching-investment__item h3 {
+    font-size: 27px;
   }
 }
+
+/* =========================
+   FAQ
+   ========================= */
+
+.coaching-faq {
+  width: 100%;
+  background: #EFADB7;
+  padding: 75px 24px 85px;
+  box-sizing: border-box;
+}
+
+.coaching-faq .page-inner {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* HEADER */
+
+.coaching-faq__header {
+  max-width: 850px;
+  margin-bottom: 45px;
+}
+
+.coaching-faq__label {
+  margin: 0 0 16px;
+
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+
+  color: #FA5039;
+}
+
+.coaching-faq h2 {
+  margin: 0 0 20px;
+
+  font-family: 'Forma DJR', sans-serif;
+  font-size: clamp(40px, 4vw, 56px);
+  font-weight: 700;
+  line-height: 1.05;
+
+  color: #FA5039;
+}
+
+.coaching-faq__intro {
+  margin: 0;
+
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+
+  color: #F9F1E6;
+}
+
+/* FAQ LISTE */
+
+.coaching-faq__list {
+  border-top: 1px solid rgba(250, 80, 57, 0.55);
+}
+
+.coaching-faq__item {
+  border-bottom: 1px solid rgba(250, 80, 57, 0.55);
+}
+
+/* FRAGE */
+
+.coaching-faq__item summary {
+  min-height: 88px;
+
+  display: grid;
+  grid-template-columns: 52px 1fr 30px;
+  gap: 18px;
+  align-items: center;
+
+  cursor: pointer;
+  list-style: none;
+}
+
+.coaching-faq__item summary::-webkit-details-marker {
+  display: none;
+}
+
+.coaching-faq__number {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+
+  color: #FA5039;
+}
+
+.coaching-faq__question {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 19px;
+  font-weight: 600;
+  line-height: 1.4;
+
+  color: #F9F1E6;
+}
+
+/* PLUS / MINUS */
+
+.coaching-faq__icon {
+  position: relative;
+
+  width: 22px;
+  height: 22px;
+}
+
+.coaching-faq__icon::before,
+.coaching-faq__icon::after {
+  content: '';
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  width: 20px;
+  height: 1px;
+
+  background: #FA5039;
+
+  transform: translate(-50%, -50%);
+  transition: transform 0.2s ease;
+}
+
+.coaching-faq__icon::after {
+  transform: translate(-50%, -50%) rotate(90deg);
+}
+
+.coaching-faq__item[open] .coaching-faq__icon::after {
+  transform: translate(-50%, -50%) rotate(0deg);
+}
+
+/* ANTWORT */
+
+.coaching-faq__answer {
+  max-width: 900px;
+  padding: 0 50px 30px 70px;
+}
+
+.coaching-faq__answer p {
+  margin: 0 0 16px;
+
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 17px;
+  line-height: 1.65;
+
+  color: #F9F1E6;
+}
+
+.coaching-faq__answer a {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+
+  color: #FA5039;
+  text-decoration: none;
+}
+
+.coaching-faq__answer a:hover {
+  text-decoration: underline;
+}
+
+/* MOBILE */
+
+@media (max-width: 850px) {
+
+  .coaching-faq {
+    padding: 55px 20px 65px;
+  }
+
+  .coaching-faq__item summary {
+    min-height: 78px;
+
+    grid-template-columns: 36px 1fr 24px;
+    gap: 12px;
+  }
+}
+
+/* MOBILE */
+
+@media (max-width: 850px) {
+
+  .coaching-cta {
+    padding: 65px 20px 75px;
+  }
+
+  .coaching-cta__text {
+    font-size: 17px;
+  }
+}
+
+/* =========================
+   KONTAKT-CTA
+   ========================= */
+
+.coaching-cta {
+  width: 100%;
+  background: #FA5039;
+  padding: 90px 24px 100px;
+  box-sizing: border-box;
+}
+
+.coaching-cta__inner {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.coaching-cta__label {
+  margin: 0 0 18px;
+
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+
+  color: #F9F1E6;
+}
+
+.coaching-cta h2 {
+  max-width: 950px;
+  margin: 0 0 24px;
+
+  font-family: 'Forma DJR', sans-serif;
+  font-size: clamp(30px, 4.5vw, 50px);
+  font-weight: 700;
+  line-height: 1.05;
+
+  color: #F9F1E6;
+}
+
+.coaching-cta__text {
+  max-width: 760px;
+  margin: 0 0 34px;
+
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.6;
+
+  color: #F9F1E6;
+}
+
+.coaching-cta__button {
+  display: inline-block;
+  padding: 15px 26px;
+
+  background: #E9A2B2;
+  border: 1px solid #E9A2B2;
+  border-radius: 2px;
+
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+
+  color: #F9F1E6;
+  text-decoration: none;
+
+  transition:
+    background 0.2s ease,
+    color 0.2s ease;
+}
+
+.coaching-cta__button:hover {
+  background: #70C7EC;
+  border-color: #70C7EC;
+  color: #F9F1E6;
+}
+
+

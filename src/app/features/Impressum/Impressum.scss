@@ -1,0 +1,172 @@
+/* =========================
+   RECHTLICHE SEITEN
+   ========================= */
+
+.legal-page {
+  width: 100%;
+  min-height: 100vh;
+
+  background: #F9F1E6;
+
+  padding: 80px 24px 100px;
+
+  box-sizing: border-box;
+}
+
+.legal-page__inner {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+/* =========================
+   HEADER
+   ========================= */
+
+.legal-page__header {
+  max-width: 900px;
+
+  margin-bottom: 70px;
+}
+
+.legal-page__label {
+  margin: 0 0 18px;
+
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+
+  color: #FA5039;
+}
+
+.legal-page h1 {
+  margin: 0 0 24px;
+
+  font-family: 'Forma DJR', sans-serif;
+  font-size: clamp(52px, 6vw, 78px);
+  font-weight: 700;
+  line-height: 1;
+
+  color: #FA5039;
+}
+
+.legal-page__intro {
+  max-width: 720px;
+
+  margin: 0;
+
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.65;
+
+  color: #1A1A1A;
+}
+
+
+/* =========================
+   INHALT
+   ========================= */
+
+.legal-page__content {
+  width: 100%;
+  max-width: 850px;
+}
+
+
+/* EINZELNE ABSCHNITTE */
+
+.legal-section {
+  padding: 34px 0;
+
+  border-top: 1px solid rgba(250, 80, 57, 0.3);
+}
+
+.legal-section:last-child {
+  border-bottom: 1px solid rgba(250, 80, 57, 0.3);
+}
+
+
+/* ZWISCHENÜBERSCHRIFT */
+
+.legal-section h2 {
+  margin: 0 0 18px;
+
+  font-family: 'Forma DJR', sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.2;
+
+  color: #FA5039;
+}
+
+
+/* TEXT */
+
+.legal-section p {
+  margin: 0 0 14px;
+
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.7;
+
+  color: #1A1A1A;
+}
+
+.legal-section p:last-child {
+  margin-bottom: 0;
+}
+
+
+/* LINKS */
+
+.legal-section a {
+  color: #FA5039;
+  text-decoration: none;
+
+  transition: opacity 0.2s ease;
+}
+
+.legal-section a:hover {
+  opacity: 0.65;
+}
+
+
+/* =========================
+   MOBILE
+   ========================= */
+
+@media (max-width: 850px) {
+
+  .legal-page {
+    padding: 55px 20px 70px;
+  }
+
+  .legal-page__header {
+    margin-bottom: 50px;
+  }
+
+  .legal-page h1 {
+    font-size: clamp(46px, 13vw, 64px);
+  }
+
+  .legal-page__intro {
+    font-size: 17px;
+  }
+
+  .legal-section {
+    padding: 28px 0;
+  }
+
+  .legal-section h2 {
+    font-size: 23px;
+  }
+
+  .legal-section p {
+    font-size: 15px;
+  }
+}

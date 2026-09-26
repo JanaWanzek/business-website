@@ -1,31 +1,192 @@
-<section class="faq">
-  <div class="container">
-    <div class="section-header">
-      <span class="eyebrow">FAQ</span>
-      <h2>Antworten auf häufig gestellte Fragen</h2>
+<!-- =========================
+     FAQ
+     ========================= -->
+
+<section class="home-faq">
+  <div class="page-inner">
+
+    <div class="home-faq__header">
+      <p class="home-faq__label">
+        FAQ
+      </p>
+
+      <h2>
+        Häufige Fragen.<br>
+        Kurz beantwortet.
+      </h2>
+
+      <p class="home-faq__intro">
+        Hier findest Du Antworten auf die wichtigsten Fragen.
+        Und wenn noch etwas offen bleibt: Schreib mir gerne.
+      </p>
     </div>
 
-    <div class="faq-list">
-      @for (item of items; track item.question) {
-        <div class="faq-item" [class.open]="item.open">
-          <button class="faq-question" (click)="toggle(item)">
-            <span>{{ item.question }}</span>
-            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <polyline points="6 9 12 15 18 9"></polyline>
-            </svg>
-          </button>
-          @if (item.open) {
-            <div class="faq-answer">
-              <p>{{ item.answer }}</p>
-            </div>
-          }
+
+    <div class="home-faq__list">
+
+      <details class="faq-item" open>
+        <summary>
+          <span class="faq-item__number">01</span>
+
+          <span class="faq-item__question">
+            Welches Format passt zu meinem Anliegen?
+          </span>
+
+          <span class="faq-item__icon"></span>
+        </summary>
+
+        <div class="faq-item__answer">
+          <p>
+            Wenn das Thema bereits feststeht, aber das passende Format noch
+            nicht, klären wir gemeinsam, welcher Rahmen sinnvoll ist.
+            Du kannst zwischen klar definierten Workshops, individuell
+            entwickelten Formaten und einer Begleitung im 1:1 wählen.
+          </p>
+
+          <a href="/organisationen">
+            Angebote kennenlernen →
+          </a>
         </div>
-      }
+      </details>
+
+
+      <details class="faq-item">
+        <summary>
+          <span class="faq-item__number">02</span>
+
+          <span class="faq-item__question">
+            Was unterscheidet standardisierte und individuelle Workshops?
+          </span>
+
+          <span class="faq-item__icon"></span>
+        </summary>
+
+        <div class="faq-item__answer">
+          <p>
+            Bei den standardisierten Workshops sind Inhalte, Dauer und Kosten
+            bereits klar definiert. Individuelle Formate entwickle ich dagegen
+            aus Eurem konkreten Anliegen, der Zielgruppe und den jeweiligen
+            Rahmenbedingungen.
+          </p>
+
+          <div class="faq-item__links">
+            <a href="/organisationen">
+              Standardisierte Workshops ansehen →
+            </a>
+
+            <a href="/individuelle-formate">
+              Individuelle Formate ansehen →
+            </a>
+          </div>
+        </div>
+      </details>
+
+
+      <details class="faq-item">
+        <summary>
+          <span class="faq-item__number">03</span>
+
+          <span class="faq-item__question">
+            Können Workshops an unsere Organisation angepasst werden?
+          </span>
+
+          <span class="faq-item__icon"></span>
+        </summary>
+
+        <div class="faq-item__answer">
+          <p>
+            Ja. Auch die standardisierten Workshops werden auf Eure Organisation
+            und Zielgruppe abgestimmt. Wenn Inhalt, Umfang oder Zielsetzung
+            stärker vom bestehenden Konzept abweichen, ist ein individuelles
+            Format die passendere Wahl.
+          </p>
+
+          <a href="/individuelle-formate">
+            Individuelle Formate ansehen →
+          </a>
+        </div>
+      </details>
+
+
+      <details class="faq-item">
+        <summary>
+          <span class="faq-item__number">04</span>
+
+          <span class="faq-item__question">
+            Bietest Du auch 1:1 Coaching an?
+          </span>
+
+          <span class="faq-item__icon"></span>
+        </summary>
+
+        <div class="faq-item__answer">
+          <p>
+            Ja. Ich begleite Menschen bei beruflichen Fragestellungen,
+            Entscheidungen und Veränderungen im 1:1 Coaching und in
+            Beratungsformaten.
+          </p>
+
+          <a href="/coaching">
+            Mehr zu Coaching & Beratung →
+          </a>
+        </div>
+      </details>
+
+
+      <details class="faq-item">
+        <summary>
+          <span class="faq-item__number">05</span>
+
+          <span class="faq-item__question">
+            Kann ich Coaching über einen AVGS nutzen?
+          </span>
+
+          <span class="faq-item__icon"></span>
+        </summary>
+
+        <div class="faq-item__answer">
+          <p>
+            Ja. AVGS-Coachings biete ich online in Kooperation mit einem
+            zertifizierten Träger an. Weitere Informationen zu Ablauf und
+            Voraussetzungen findest Du auf meiner Coaching-Seite.
+          </p>
+
+          <a href="/coaching">
+            Mehr zum AVGS-Coaching →
+          </a>
+        </div>
+      </details>
+
     </div>
 
-    <p class="closing-note">
-      Haben Sie weitere Fragen?
-      <a routerLink="/kontakt">Nehmen Sie gerne Kontakt auf.</a>
+  </div>
+</section>
+
+
+<!-- =========================
+     ABSCHLUSS-CTA
+     ========================= -->
+
+<section class="home-contact-cta">
+  <div class="page-inner">
+
+    <p class="home-contact-cta__label">
+      LASS UNS INS GESPRÄCH KOMMEN
     </p>
+
+    <h2>
+      Du möchtest wissen, welches Format zu Deinem Anliegen passt?
+    </h2>
+
+    <p class="home-contact-cta__text">
+      Schreib mir kurz, worum es geht. Gemeinsam klären wir,
+      ob ein standardisierter Workshop, ein individuelles Format oder
+      Coaching & Beratung sinnvoll ist.
+    </p>
+
+    <a href="/kontakt" class="home-contact-cta__button">
+      Unverbindlich Kontakt aufnehmen
+    </a>
+
   </div>
 </section>

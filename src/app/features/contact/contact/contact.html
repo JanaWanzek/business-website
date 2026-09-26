@@ -1,88 +1,213 @@
-<section class="page-hero">
-  <div class="container">
-    <span class="eyebrow">Kontakt</span>
-    <h1>Kontakt aufnehmen</h1>
-    <p>Ich freue mich auf Ihre Nachricht. Das Erstgespräch ist kostenlos und unverbindlich.</p>
+<!-- =========================
+     HERO
+     ========================= -->
+
+<section class="contact-hero">
+  <div class="page-inner">
+
+    <p class="contact-hero__label">
+      KONTAKT
+    </p>
+
+    <h1>
+      Lass uns ins Gespräch kommen.
+    </h1>
+
+    <p class="contact-hero__intro">
+      Du interessiert dich für einen Workshop, ein Coaching, möchtest ein individuelles
+      Format entwickeln oder hast eine andere Anfrage? Schreibe mir gerne.
+      In einem ersten Gespräch klären wir, worum es geht und ob eine Zusammenarbeit passt.
+    </p>
+
   </div>
 </section>
 
-<section class="contact-section">
-  <div class="container">
-    <div class="contact-grid">
-      <div class="contact-info">
-        <h2>So erreichen Sie mich</h2>
 
-        <div class="info-item">
-          <span class="info-label">Telefon</span>
-          <a href="tel:+4917632912002">0176 32912002</a>
-        </div>
+<!-- =========================
+     KONTAKT
+     ========================= -->
 
-        <div class="info-item">
-          <span class="info-label">E-Mail</span>
-          <a href="mailto:coaching@jana-wanzek.de">coaching&#64;jana-wanzek.de</a>
-        </div>
+<section class="contact-main">
+  <div class="page-inner contact-main__grid">
 
-        <div class="info-item">
-          <span class="info-label">Instagram</span>
-          <a href="https://instagram.com/ent.wicklungsraum.coaching" target="_blank" rel="noopener noreferrer">
-            &#64;ent.wicklungsraum.coaching
-          </a>
-        </div>
+    <!-- FORMULAR -->
+    <div class="contact-form-wrap">
 
-        <div class="info-item">
-          <span class="info-label">Standort</span>
-          <span>Bremen – deutschlandweit & online</span>
-        </div>
-      </div>
+      <p class="contact-section-label">
+        DEINE ANFRAGE
+      </p>
 
-      <div class="form-wrapper">
-        <form *ngIf="!submitted" (ngSubmit)="onSubmit()" #contactForm="ngForm">
-          <div class="form-group">
+      <h2>
+        Schreib mir.
+      </h2>
+
+      <form class="contact-form">
+
+        <div class="contact-form__row">
+          <div class="contact-field">
             <label for="name">Name</label>
             <input
-              id="name"
               type="text"
+              id="name"
               name="name"
-              placeholder="Ihr Name"
-              ngModel
-              required
-            />
+              placeholder="Dein Name"
+            >
           </div>
 
-          <div class="form-group">
-            <label for="email">E-Mail</label>
+          <div class="contact-field">
+            <label for="organisation">Organisation</label>
             <input
-              id="email"
-              type="email"
-              name="email"
-              placeholder="Ihre E-Mail-Adresse"
-              ngModel
-              required
-              email
-            />
+              type="text"
+              id="organisation"
+              name="organisation"
+              placeholder="Organisation"
+            >
           </div>
-
-          <div class="form-group">
-            <label for="message">Nachricht</label>
-            <textarea
-              id="message"
-              name="message"
-              placeholder="Wie kann ich Ihnen helfen?"
-              ngModel
-              required
-              rows="5"
-            ></textarea>
-          </div>
-
-          <button type="submit" [disabled]="contactForm.invalid">
-            Nachricht senden
-          </button>
-        </form>
-
-        <div *ngIf="submitted" class="success-message">
-          <p>Vielen Dank für Ihre Nachricht! Ich melde mich so schnell wie möglich bei Ihnen.</p>
         </div>
-      </div>
+
+
+        <div class="contact-field">
+          <label for="email">E-Mail</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="name@organisation.de"
+          >
+        </div>
+
+
+        <div class="contact-field">
+          <label for="topic">Worum geht es?</label>
+
+          <select id="topic" name="topic">
+            <option value="">Bitte auswählen</option>
+            <option value="workshop">Standardisierter Workshop</option>
+            <option value="individuell">Individuelles Format</option>
+            <option value="coaching">Coaching</option>
+            <option value="sonstiges">Sonstiges</option>
+          </select>
+        </div>
+
+
+        <div class="contact-field">
+          <label for="message">Nachricht</label>
+
+          <textarea
+            id="message"
+            name="message"
+            rows="7"
+            placeholder="Worum geht es in Deiner Anfrage?"
+          ></textarea>
+        </div>
+
+
+        <button type="submit" class="contact-form__button">
+          Anfrage senden
+        </button>
+
+      </form>
+
     </div>
+
+
+    <!-- DIREKTER KONTAKT -->
+    <aside class="contact-info">
+
+      <div class="contact-info__block">
+        <p class="contact-info__label">
+          DIREKTER KONTAKT
+        </p>
+
+        <h3>
+          Jana Wanzek
+        </h3>
+
+        <p>
+          <a href="mailto:coaching@jana-wanzek.de">
+            coaching@jana-wanzek.de
+          </a>
+        </p>
+
+        <p>
+          <a href="tel:+4917632912002">
+            0176 32912002
+          </a>
+        </p>
+      </div>
+
+
+      <div class="contact-info__block contact-info__block--secondary">
+
+        <p class="contact-info__label">
+          WAS PASSIERT DANACH?
+        </p>
+
+        <p>
+          Ich melde mich in der Regel innerhalb von 2–3 Werktagen zurück.
+          Bei Workshop- und Coachinganfragen vereinbaren wir anschließend ein unverbindliches
+          Vorgespräch, in dem wir Anliegen, Zielgruppe und Rahmenbedingungen besprechen.
+        </p>
+
+      </div>
+
+    </aside>
+
   </div>
 </section>
+
+
+<!-- =========================
+     ABLAUF
+     ========================= -->
+
+<section class="contact-process">
+  <div class="page-inner">
+
+    <p class="contact-process__label">
+      SO GEHT ES WEITER
+    </p>
+
+    <h2>
+      Von der Anfrage zur Zusammenarbeit.
+    </h2>
+
+    <div class="contact-process__grid">
+
+      <div class="contact-process__item">
+        <span class="contact-process__number">01</span>
+
+        <h3>Anfrage senden</h3>
+
+        <p>
+          Du schreibst mir kurz, worum es geht.
+        </p>
+      </div>
+
+
+      <div class="contact-process__item">
+        <span class="contact-process__number">02</span>
+
+        <h3>Kennenlernen</h3>
+
+        <p>
+          Wir besprechen Dein Anliegen und klären, welches Format dazu passt.
+        </p>
+      </div>
+
+
+      <div class="contact-process__item">
+        <span class="contact-process__number">03</span>
+
+        <h3>Zusammenarbeit planen</h3>
+
+        <p>
+          Du erhältst ein konkretes Angebot und wir stimmen die nächsten Schritte ab.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+

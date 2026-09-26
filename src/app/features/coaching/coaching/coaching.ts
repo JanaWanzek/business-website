@@ -1,11 +1,9 @@
 import { Component } from '@angular/core';
-import { RouterLink } from '@angular/router';
 
 @Component({
-  standalone: true,
   selector: 'app-coaching',
-  imports: [RouterLink],
+  standalone: true,
   templateUrl: './coaching.html',
-  styleUrl: './coaching.scss',
+  styleUrl: './coaching.scss'
 })
 export class Coaching {}

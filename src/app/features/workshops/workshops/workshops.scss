@@ -1,146 +1,627 @@
-.page-hero {
-  padding: 100px 24px 80px;
-  background: var(--background-light);
-  border-bottom: 1px solid var(--border-light);
+/* =========================
+   GEMEINSAMER CONTAINER
+   ========================= */
 
-  .container {
-    max-width: 800px;
-    margin: 0 auto;
-  }
+.page-inner {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-.eyebrow {
-  display: inline-block;
-  font-size: 0.78rem;
-  font-weight: 600;
+
+/* =========================
+   HERO
+   ========================= */
+
+.workshops-hero {
+  width: 100%;
+  background: #FA5039;
+  padding: 90px 24px 100px;
+  box-sizing: border-box;
+}
+
+.workshops-hero__inner {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  gap: 55px;
+  align-items: center;
+}
+
+.workshops-hero__content {
+  min-width: 0;
+}
+
+.workshops-hero__label {
+  margin: 0 0 18px;
+
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
   letter-spacing: 3px;
   text-transform: uppercase;
-  color: var(--primary-light);
-  margin-bottom: 12px;
+
+  color: #F9F1E6;
 }
 
-h1 {
-  font-size: clamp(2rem, 5vw, 3rem);
-  color: var(--text-dark);
-  margin: 0 0 20px;
+.workshops-hero h1 {
+  max-width: 650px;
+  margin: 0 0 30px;
+
+  font-family: 'Forma DJR', sans-serif;
+  font-size: clamp(50px, 5vw, 72px);
+  font-weight: 700;
+  line-height: 0.98;
+
+  color: #F9F1E6;
 }
 
-.page-hero p {
-  font-size: 1.1rem;
-  color: var(--text-medium);
-  line-height: 1.7;
-  margin: 0;
+.workshops-hero__intro {
   max-width: 600px;
+  margin: 0;
+
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.65;
+
+  color: #F9F1E6;
 }
 
-.content {
-  padding: 90px 24px;
 
-  .container {
-    max-width: 900px;
-    margin: 0 auto;
-  }
-}
+/* HERO BILD */
 
-.text-block {
-  margin-bottom: 56px;
-
-  h2 {
-    font-size: 1.8rem;
-    color: var(--text-dark);
-    margin: 0 0 20px;
-  }
-
-  p {
-    color: var(--text-medium);
-    line-height: 1.8;
-    margin-bottom: 16px;
-  }
-}
-
-.workshop-types {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
-  margin-bottom: 64px;
-}
-
-.workshop-item {
-  padding: 32px;
-  background: var(--background-white);
-  border-radius: 8px;
-  border: 1px solid var(--border-light);
-
-  h3 {
-    font-size: 1.1rem;
-    color: var(--text-dark);
-    margin: 0 0 12px;
-  }
-
-  p {
-    color: var(--text-medium);
-    line-height: 1.7;
-    font-size: 0.95rem;
-    margin: 0 0 20px;
-  }
-}
-
-.tags {
+.workshops-hero__visual {
   display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
+  justify-content: flex-end;
+  align-items: center;
 
-  span {
-    font-size: 0.75rem;
-    font-weight: 500;
-    letter-spacing: 0.5px;
-    padding: 4px 10px;
-    border-radius: 20px;
-    background: var(--background-light);
-    color: var(--primary);
-    border: 1px solid var(--border-light);
-  }
+  min-width: 0;
 }
 
-.cta-block {
-  text-align: center;
-  padding: 56px 40px;
-  background: var(--background-light);
-  border-radius: 12px;
-  border: 1px solid var(--border-light);
-
-  h2 {
-    font-size: 1.8rem;
-    color: var(--text-dark);
-    margin: 0 0 16px;
-  }
-
-  p {
-    color: var(--text-medium);
-    margin: 0 auto 28px;
-    max-width: 500px;
-  }
+.workshops-image-placeholder {
+  width: 100%;
+  max-width: 470px;
 }
 
-.btn {
-  display: inline-block;
-  padding: 13px 32px;
-  background: var(--primary);
-  color: white;
-  border-radius: 4px;
-  font-size: 0.95rem;
-  font-weight: 500;
-  transition: background 0.25s ease, transform 0.2s ease;
+.workshops-image-placeholder img {
+  display: block;
+
+  width: 100%;
+  height: auto;
+
+  border-radius: 0 70px 0 70px;
+}
+
+
+/* =========================
+   INTRO / STANDARDISIERTE FORMATE
+   ========================= */
+
+.workshops-intro {
+  width: 100%;
+  background: #F9F1E6;
+  padding: 75px 24px 80px;
+  box-sizing: border-box;
+}
+
+.workshops-intro__grid {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 70px;
+  align-items: start;
+}
+
+.workshops-intro__label {
+  margin: 0 0 18px;
+
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+
+  color: #FA5039;
+}
+
+.workshops-intro h2 {
+  max-width: 560px;
+  margin: 0;
+
+  font-family: 'Forma DJR', sans-serif;
+  font-size: clamp(36px, 3vw, 48px);
+  font-weight: 700;
+  line-height: 1.08;
+
+  color: #FA5039;
+}
+
+.workshops-intro__text {
+  max-width: 620px;
+  padding-top: 36px;
+}
+
+.workshops-intro__text p {
+  margin: 0 0 18px;
+
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 1.65;
+
+  color: #1A1A1A;
+}
+
+.workshops-intro__text p:last-child {
+  margin-bottom: 0;
+}
+
+
+/* =========================
+   SO LÄUFT ES AB
+   ========================= */
+
+.workshops-process {
+  width: 100%;
+  background: #EFADB7;
+  padding: 70px 24px 80px;
+  box-sizing: border-box;
+}
+
+.workshops-process__label {
+  margin: 0 0 38px;
+
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+
+  color: #FA5039;
+}
+
+.workshops-process__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 60px;
+}
+
+.process-step {
+  position: relative;
+
+  padding-top: 22px;
+
+  border-top: 1px solid #FA5039;
+}
+
+.process-step__number {
+  display: block;
+  margin-bottom: 28px;
+
+  font-family: 'Forma DJR', sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1;
+
+  color: #FA5039;
+}
+
+.process-step h3 {
+  margin: 0 0 14px;
+
+  font-family: 'Forma DJR', sans-serif;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 1.15;
+
+  color: #F9F1E6;
+}
+
+.process-step p {
+  max-width: 310px;
+  margin: 0;
+
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.55;
+
+  color: #F9F1E6;
+}
+
+
+/* =========================
+   WORKSHOP-ÜBERSICHT
+   ========================= */
+
+.workshops-overview {
+  width: 100%;
+  background: #F9F1E6;
+  padding: 80px 24px 95px;
+  box-sizing: border-box;
+}
+
+.workshops-overview__label {
+  margin: 0 0 18px;
+
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+
+  color: #FA5039;
+}
+
+.workshops-overview h2 {
+  max-width: 900px;
+  margin: 0 0 26px;
+
+  font-family: 'Forma DJR', sans-serif;
+  font-size: clamp(40px, 4vw, 56px);
+  font-weight: 700;
+  line-height: 1.05;
+
+  color: #FA5039;
+}
+
+.workshops-overview__intro {
+  width: 100%;
+  max-width: none;
+
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 18px;
+  line-height: 1.65;
+  color: #1A1A1A;
+}
+
+
+/* =========================
+   WORKSHOP-KARTEN
+   ========================= */
+
+.workshops-overview__grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.workshop-card {
+  min-height: 215px;
+  padding: 28px 30px;
+
+  display: flex;
+  flex-direction: column;
+
+  box-sizing: border-box;
+
+  background: #ADB5A7;
+
+  color: #F9F1E6;
   text-decoration: none;
 
-  &:hover {
-    background: var(--primary-dark);
-    transform: translateY(-2px);
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.workshop-card:hover {
+  transform: translateY(-4px);
+
+  box-shadow:
+    0 10px 24px rgba(0, 0, 0, 0.07);
+}
+
+.workshop-card__number {
+  display: block;
+  margin-bottom: 24px;
+
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 2px;
+
+  color: #F9F1E6;
+}
+
+.workshop-card h3 {
+  max-width: 520px;
+  margin: 0 0 26px;
+
+  font-family: 'Forma DJR', sans-serif;
+  font-size: 23px;
+  font-weight: 700;
+  line-height: 1.15;
+
+  color: #F9F1E6;
+}
+
+.workshop-card__link {
+  margin-top: auto;
+
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+
+  color: #F9F1E6;
+}
+
+
+/* =========================
+   ABSCHLUSS-CTA
+   ========================= */
+
+.workshops-closing {
+  width: 100%;
+  background: #FA5039;
+  padding: 80px 24px 90px;
+  box-sizing: border-box;
+}
+
+.workshops-closing__label {
+  margin: 0 0 18px;
+
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+
+  color: #F9F1E6;
+}
+
+.workshops-closing h2 {
+  max-width: 850px;
+  margin: 0 0 28px;
+
+  font-family: 'Forma DJR', sans-serif;
+  font-size: clamp(40px, 4vw, 58px);
+  font-weight: 700;
+  line-height: 1.05;
+
+  color: #F9F1E6;
+}
+
+.workshops-closing__text {
+  max-width: 720px;
+  margin: 0 0 32px;
+
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.65;
+
+  color: #F9F1E6;
+}
+
+.workshops-closing__button {
+  display: inline-block;
+
+  padding: 15px 26px;
+
+  background: #F9F1E6;
+
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+
+  color: #FA5039;
+  text-decoration: none;
+
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease;
+}
+
+.workshops-closing__button:hover {
+  transform: translateY(-3px);
+  background: #EFADB7;
+  color: #F9F1E6;
+}
+
+
+
+/* =========================
+   KONTAKT CTA
+   ========================= */
+
+.workshop-cta {
+  width: 100%;
+  background: #FA5039;
+  padding: 90px 24px 100px;
+  box-sizing: border-box;
+}
+
+.workshop-cta__inner {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  text-align: left;
+}
+
+.workshop-cta__label {
+  margin: 0 0 18px;
+
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+
+  color: #F9F1E6;
+}
+
+.workshop-cta h2 {
+  max-width: 950px;
+  margin: 0 0 24px;
+
+  font-family: 'Forma DJR', sans-serif;
+  font-size: clamp(30px, 4.5vw, 50px);
+  font-weight: 700;
+  line-height: 1.05;
+
+  color: #F9F1E6;
+}
+
+.workshop-cta__text {
+  max-width: 760px;
+  margin: 0 0 34px;
+
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.6;
+
+  color: #F9F1E6;
+}
+
+.workshop-cta__button {
+  display: inline-block;
+  padding: 15px 26px;
+
+  background: #E9A2B2;
+  border: 1px solid #E9A2B2;
+  border-radius: 2px;
+
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+
+  color: #F9F1E6;
+  text-decoration: none;
+
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.workshop-cta__button:hover {
+  background: #70C7EC;
+  border-color: #70C7EC;
+  transform: translateY(-2px);
+}
+
+
+/* =========================
+   TABLET
+   ========================= */
+
+@media (max-width: 900px) {
+
+  .page-inner {
+    max-width: none;
+  }
+
+  .workshops-hero__inner {
+    grid-template-columns: 1fr;
+    gap: 45px;
+  }
+
+  .workshops-hero__visual {
+    justify-content: flex-start;
+  }
+
+  .workshops-image-placeholder {
+    max-width: 500px;
+  }
+
+  .workshops-intro__grid {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .workshops-intro__text {
+    padding-top: 0;
+  }
+
+  .workshops-process__grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .process-step {
+    padding-bottom: 10px;
+  }
+
+  .process-step p {
+    max-width: 600px;
+  }
+
+  .workshops-overview__grid {
+    grid-template-columns: 1fr;
   }
 }
 
-@media (max-width: 768px) {
-  .workshop-types {
-    grid-template-columns: 1fr;
+
+/* =========================
+   MOBILE
+   ========================= */
+
+@media (max-width: 600px) {
+
+  .workshops-hero {
+    padding: 60px 20px 65px;
+  }
+
+  .workshops-hero h1 {
+    font-size: clamp(44px, 11vw, 60px);
+  }
+
+  .workshops-hero__intro {
+    font-size: 17px;
+  }
+
+  .workshops-image-placeholder img {
+    border-radius: 0 50px 0 50px;
+  }
+
+
+  .workshops-intro {
+    padding: 55px 20px 60px;
+  }
+
+  .workshops-intro h2 {
+    font-size: 36px;
+  }
+
+
+  .workshops-process {
+    padding: 55px 20px 65px;
+  }
+
+  .process-step__number {
+    font-size: 32px;
+  }
+
+
+  .workshops-overview {
+    padding: 60px 20px 70px;
+  }
+
+  .workshops-overview__intro {
+    font-size: 17px;
+  }
+
+  .workshop-card {
+    min-height: 185px;
+    padding: 24px;
+  }
+
+  .workshop-card h3 {
+    font-size: 22px;
+  }
+
+
+  .workshops-closing {
+    padding: 60px 20px 70px;
+  }
+
+  .workshops-closing__text {
+    font-size: 17px;
   }
 }
