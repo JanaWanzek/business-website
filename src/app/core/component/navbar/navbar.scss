@@ -2,7 +2,7 @@ nav {
   position: sticky;
   top: 0;
   z-index: 1000;
-  background: rgba(255, 255, 255, 0.96);
+  background: #F9F1E6;
   backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--border-light);
   transition: box-shadow 0.3s ease;
@@ -22,12 +22,16 @@ nav {
 }
 
 .logo {
-  font-family: 'Playfair Display', serif;
-  font-size: 1.25rem;
-  font-weight: 700;
-  color: var(--text-dark);
+  display: flex;
+  align-items: center;
   text-decoration: none;
-  letter-spacing: 0.3px;
+  padding-bottom: 0;
+}
+
+.logo img {
+  width: 180px;
+  height: auto;
+  display: block;
 }
 
 ul {
@@ -40,8 +44,9 @@ ul {
 
 a {
   font-size: 0.875rem;
-  font-weight: 500;
-  color: var(--text-medium);
+  font-weight: 400;
+  font-family: 'Helvetica Neue', sans-serif;
+  color: #FA5039;
   text-decoration: none;
   letter-spacing: 0.2px;
   transition: color 0.2s;
@@ -55,18 +60,23 @@ a {
     left: 0;
     width: 0;
     height: 1.5px;
-    background: var(--primary);
+    background: #FA5039;
     transition: width 0.25s ease;
   }
 
   &:hover,
   &.active {
-    color: var(--primary);
+    color: #EFADB7;
 
     &::after {
       width: 100%;
+      background: #EFADB7;
     }
   }
+}
+
+.logo::after {
+  display: none;
 }
 
 .menu-toggle {
@@ -82,7 +92,7 @@ a {
     display: block;
     width: 24px;
     height: 2px;
-    background: var(--text-dark);
+    background: #FA5039;
     border-radius: 2px;
     transition: all 0.25s ease;
 
@@ -101,6 +111,10 @@ a {
 }
 
 @media (max-width: 768px) {
+  .logo img {
+    width: 150px;
+  }
+
   .menu-toggle {
     display: flex;
   }
@@ -113,7 +127,7 @@ a {
     right: 0;
     flex-direction: column;
     gap: 0;
-    background: white;
+    background: #F9F1E6;
     border-bottom: 1px solid var(--border-light);
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
     padding: 8px 0;

@@ -1,0 +1,1493 @@
+/* =========================
+   DEMOKRATIEFITNESS HERO
+   ========================= */
+
+.demokratie-hero {
+  width: 100%;
+  background: #F9F1E6;
+  padding: 70px 24px 100px;
+  box-sizing: border-box;
+}
+
+.demokratie-hero__inner {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 80px;
+  align-items: center;
+
+    padding-bottom: 55px;
+  border-bottom: 1px solid #70C7EC;
+}
+
+
+/* ZURÜCK */
+
+.demokratie-hero__back {
+  display: inline-block;
+  margin-bottom: 50px;
+
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 15px;
+  color: #70C7EC;
+  text-decoration: none;
+}
+
+.demokratie-hero__back:hover {
+  text-decoration: underline;
+}
+
+
+/* LINKE SEITE */
+
+.demokratie-hero__content {
+  min-width: 0;
+}
+
+.demokratie-hero__label {
+  margin: 0 0 22px;
+
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 13px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #FA5039;
+}
+
+.demokratie-hero h1 {
+  margin: 0 0 36px;
+
+  font-family: 'Forma DJR', sans-serif;
+  font-size: clamp(60px, 6vw, 88px);
+  font-weight: 700;
+  line-height: 0.98;
+  color: #FA5039;
+}
+
+.demokratie-hero__intro {
+  max-width: 650px;
+  margin: 0;
+
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 18px;
+  line-height: 1.65;
+  color: #1A1A1A;
+}
+
+
+/* RECHTE SEITE */
+
+.demokratie-hero__brand {
+  min-width: 0;
+  padding-left: 55px;
+  border-left: 1px solid #70C7EC;
+}
+
+.demokratie-hero__logo {
+  display: block;
+  width: 100%;
+  max-width: 240px;
+  height: auto;
+  margin: 0 0 35px;
+
+  mix-blend-mode: multiply;
+}
+
+.demokratie-hero__brand-text {
+  max-width: 360px;
+  margin: 0 0 25px;
+
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.55;
+  color: #1A1A1A;
+}
+
+.demokratie-hero__link {
+  display: inline-flex;
+  align-items: center;
+  gap: 16px;
+
+  padding-bottom: 5px;
+  border-bottom: 1px solid #1A1A1A;
+
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  color: #1A1A1A;
+  text-decoration: none;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 850px) {
+
+  .demokratie-hero {
+    padding: 50px 20px 70px;
+  }
+
+  .demokratie-hero__inner {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+
+  .demokratie-hero__back {
+    margin-bottom: 35px;
+  }
+
+  .demokratie-hero__brand {
+    padding-left: 0;
+    padding-top: 40px;
+
+    border-left: none;
+    border-top: 1px solid #AEBBAA;
+  }
+
+  .demokratie-hero h1 {
+    font-size: clamp(52px, 14vw, 72px);
+  }
+
+  .demokratie-hero__logo {
+    max-width: 200px;
+  }
+}
+
+/* =========================
+   KONZEPT
+   ========================= */
+
+.demokratie-hero__line {
+  width: 44px;
+  height: 2px;
+
+  margin: 30px 0;
+
+  background: #1A1A1A;
+}
+
+.demokratie-hero__concept-text {
+  margin: 0 0 24px;
+
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.55;
+
+  color: #1A1A1A;
+}
+
+.demokratie-hero__external-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 16px;
+
+  padding-bottom: 4px;
+
+  border-bottom: 1px solid #1A1A1A;
+
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+
+  color: #1A1A1A;
+  text-decoration: none;
+
+  transition: gap 0.2s ease;
+}
+
+.demokratie-hero__external-link:hover {
+  gap: 22px;
+}
+
+
+/* =========================
+   RESPONSIVE
+   ========================= */
+
+@media (max-width: 1000px) {
+
+  .demokratie-hero {
+    grid-template-columns: 1fr;
+  }
+
+  .demokratie-hero__main {
+    padding: 70px 40px;
+  }
+
+  .demokratie-hero__content {
+    max-width: 100%;
+    margin: 0;
+  }
+
+  .demokratie-hero__concept {
+    padding: 60px 40px;
+  }
+
+  .demokratie-hero__concept-inner {
+    max-width: 100%;
+  }
+
+  .demokratie-logo-placeholder {
+    max-width: 420px;
+  }
+}
+
+
+@media (max-width: 600px) {
+
+  .demokratie-hero__main {
+    padding: 55px 24px;
+  }
+
+  .demokratie-hero__concept {
+    padding: 50px 24px;
+  }
+
+  .demokratie-hero h1 {
+    font-size: 52px;
+  }
+
+  .demokratie-hero__claim {
+    font-size: 24px;
+  }
+
+  .demokratie-hero__text {
+    font-size: 16px;
+  }
+}
+
+/* =========================
+   WARUM DEMOKRATIEFITNESS?
+   ========================= */
+
+.demokratie-benefits {
+  width: 100%;
+  background: #F9F1E6;
+
+  padding: 60px 24px 100px;
+  box-sizing: border-box;
+}
+
+.demokratie-benefits__inner {
+  width: 100%;
+  max-width: 1200px;
+
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+
+  gap: 80px;
+
+  align-items: start;
+}
+
+
+/* =========================
+   LINKE SEITE
+   ========================= */
+
+.demokratie-benefits__label {
+  margin: 0 0 18px;
+
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+
+  color: #FA5039;
+}
+
+.demokratie-benefits h2 {
+  max-width: 720px;
+
+  margin: 0 0 32px;
+
+  font-family: 'Forma DJR', 'Helvetica Neue', Arial, sans-serif;
+
+  font-size: clamp(42px, 4vw, 50px);
+  font-weight: 700;
+  line-height: 1.05;
+
+  color: #FA5039;
+}
+
+.demokratie-benefits__content p {
+  max-width: 720px;
+
+  margin: 0 0 22px;
+
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+
+  font-size: 18px;
+  line-height: 1.65;
+
+  color: #1A1A1A;
+}
+
+.demokratie-benefits__content p:last-child {
+  margin-bottom: 0;
+}
+
+
+/* =========================
+   MEHRWERT-PANEL
+   ========================= */
+
+.demokratie-benefits__panel {
+  background: #E9A2B2;
+
+  padding: 38px 40px;
+
+  box-sizing: border-box;
+}
+
+.demokratie-benefits__panel-label {
+  margin: 0 0 28px;
+
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+
+  font-size: 12px;
+  font-weight: 500;
+
+  letter-spacing: 3px;
+
+  color: #FA5039;
+}
+
+
+/* =========================
+   EINZELNER PUNKT
+   ========================= */
+
+.demokratie-benefit {
+  display: grid;
+
+  grid-template-columns: 50px 1fr;
+
+  gap: 18px;
+
+  padding: 24px 0;
+
+  border-top: 1px solid rgba(249, 241, 230, 0.8);
+}
+
+.demokratie-benefit:first-of-type {
+  border-top: 0;
+  padding-top: 0;
+}
+
+.demokratie-benefit__number {
+  font-family: 'Forma DJR', 'Helvetica Neue', Arial, sans-serif;
+
+  font-size: 18px;
+  font-weight: 700;
+
+  color: #F9F1E6;
+}
+
+.demokratie-benefit h3 {
+  margin: 0 0 8px;
+
+  font-family: 'Forma DJR', 'Helvetica Neue', Arial, sans-serif;
+
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.1;
+
+  color: #F9F1E6;
+}
+
+.demokratie-benefit p {
+  margin: 0;
+
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+
+  font-size: 16px;
+  line-height: 1.55;
+
+  color: #F9F1E6;
+}
+.demokratie-benefits .demokratie-benefits__label {
+  margin: 0 0 18px;
+
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 13px !important;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+
+  color: #FA5039 !important;
+}
+
+/* =========================
+   RESPONSIVE
+   ========================= */
+
+@media (max-width: 900px) {
+
+  .demokratie-benefits__inner {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+
+  .demokratie-benefits__panel {
+    max-width: 700px;
+  }
+}
+
+
+@media (max-width: 600px) {
+
+  .demokratie-benefits {
+    padding: 65px 20px;
+  }
+
+  .demokratie-benefits__content p {
+    font-size: 17px;
+  }
+
+  .demokratie-benefits__panel {
+    padding: 30px 26px;
+  }
+}
+
+/* =========================
+   10 DEMOKRATIE-MUSKELN
+   ========================= */
+
+.demokratie-muskeln {
+  width: 100%;
+  padding: 60px 24px;
+  box-sizing: border-box;
+  background: #AEBBAA;
+}
+
+.demokratie-muskeln__inner {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.demokratie-muskeln__intro {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 70px;
+
+  margin-bottom: 40px;
+}
+
+.demokratie-muskeln .demokratie-muskeln__label {
+  margin: 0 0 12px;
+
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 13px !important;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+
+  color: #FA5039 !important;
+}
+
+.demokratie-muskeln h2 {
+  margin: 0;
+
+  font-family: 'Forma DJR', 'Helvetica Neue', Arial, sans-serif;
+  font-size: clamp(40px, 3.5vw, 54px);
+  font-weight: 700;
+  line-height: 1;
+
+  color: #F9F1E6;
+}
+
+.demokratie-muskeln__subtitle {
+  margin: 10px 0 0;
+
+  font-family: 'Forma DJR', 'Helvetica Neue', Arial, sans-serif;
+  font-size: 25px;
+  font-weight: 700;
+
+  color: #F9F1E6;
+}
+
+.demokratie-muskeln__text p {
+  margin: 0 0 14px;
+
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 18px;
+  line-height: 1.55;
+
+  color: #F9F1E6;
+}
+
+.demokratie-muskel {
+  min-height: 115px;
+  padding: 22px 24px;
+
+  border-right: 1px solid rgba(249, 241, 230, 0.7);
+  border-bottom: 1px solid rgba(249, 241, 230, 0.7);
+
+  box-sizing: border-box;
+}
+
+.demokratie-muskel span {
+  display: block;
+  margin-bottom: 12px;
+
+  font-family: 'Forma DJR', 'Helvetica Neue', Arial, sans-serif;
+  font-size: 27px;
+  font-weight: 700;
+
+  color: #FA5039;
+}
+
+.demokratie-muskel h3 {
+  margin: 0;
+
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.25;
+
+  color: #F9F1E6;
+}
+
+/* =========================
+   MUSKEL-GRID
+   ========================= */
+
+.demokratie-muskeln__grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+
+  border-top: 1px solid rgba(249, 241, 230, 0.7);
+}
+
+.demokratie-muskel {
+  min-height: 150px;
+
+  padding: 28px 24px;
+
+  border-right: 1px solid rgba(249, 241, 230, 0.7);
+  border-bottom: 1px solid rgba(249, 241, 230, 0.7);
+
+  box-sizing: border-box;
+}
+
+.demokratie-muskel:nth-child(5n) {
+  border-right: 0;
+}
+
+.demokratie-muskel span {
+  display: block;
+
+  margin-bottom: 20px;
+
+  font-family: 'Forma DJR', 'Helvetica Neue', Arial, sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+
+  color: #FA5039;
+}
+
+.demokratie-muskel h3 {
+  margin: 0;
+
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 1.3;
+
+  color: #F9F1E6;
+}
+
+
+/* =========================
+   RESPONSIVE
+   ========================= */
+
+@media (max-width: 900px) {
+
+  .demokratie-muskeln__intro {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+
+  .demokratie-muskeln__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .demokratie-muskel:nth-child(5n) {
+    border-right: 1px solid rgba(249, 241, 230, 0.7);
+  }
+
+  .demokratie-muskel:nth-child(2n) {
+    border-right: 0;
+  }
+}
+
+
+@media (max-width: 600px) {
+
+  .demokratie-muskeln {
+    padding: 65px 20px;
+  }
+
+  .demokratie-muskeln__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .demokratie-muskel,
+  .demokratie-muskel:nth-child(2n),
+  .demokratie-muskel:nth-child(5n) {
+    border-right: 0;
+  }
+
+  .demokratie-muskel {
+    min-height: auto;
+  }
+}
+/* =========================
+   RAHMENBEDINGUNGEN
+   ========================= */
+
+.demokratie-rahmen {
+  width: 100%;
+  background: #F9F1E6;
+  padding: 80px 24px;
+  box-sizing: border-box;
+}
+
+.demokratie-rahmen__inner {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 80px;
+
+  align-items: start;
+}
+
+
+/* INTRO */
+
+.demokratie-rahmen .demokratie-rahmen__label {
+  margin: 0 0 16px;
+
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 13px !important;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+
+  color: #FA5039 !important;
+}
+
+.demokratie-rahmen h2 {
+  margin: 0 0 28px;
+
+  font-family: 'Forma DJR', 'Helvetica Neue', Arial, sans-serif;
+  font-size: clamp(40px, 3.7vw, 56px);
+  font-weight: 700;
+  line-height: 1.05;
+
+  color: #FA5039;
+}
+
+.demokratie-rahmen__intro p {
+  margin: 0 0 20px;
+
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+
+  color: #1A1A1A;
+}
+
+
+/* FACTS */
+
+.demokratie-rahmen__fact {
+  display: block;
+  padding: 26px 0;
+  border-bottom: 1px solid #ADB5A7
+}
+
+.demokratie-rahmen__facts {
+  border-top: 1px solid #ADB5A7;
+}
+
+.demokratie-rahmen__fact h3 {
+  margin: 0 0 12px;
+
+  font-family: 'Forma DJR', 'Helvetica Neue', Arial, sans-serif;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 1.15;
+
+  color: #FA5039;
+}
+
+.demokratie-rahmen__fact p {
+  margin: 0;
+
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.55;
+
+  color: #1A1A1A;
+}
+
+@media (max-width: 700px) {
+  .demokratie-rahmen__facts {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+  .demokratie-rahmen__inner {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+}
+
+@media (max-width: 600px) {
+  .demokratie-rahmen {
+    padding: 60px 20px;
+  }
+
+  .demokratie-rahmen__fact {
+    grid-template-columns: 42px 1fr;
+  }
+}
+
+/* ========================================
+   BILDUNGSORGANISATIONEN + AZUBIS
+   ======================================== */
+
+.demokratie-targets {
+  width: 100%;
+  padding: 80px 24px;
+  box-sizing: border-box;
+  background: #F9F1E6;
+}
+
+.demokratie-targets__inner {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.demokratie-targets .demokratie-target-card {
+  width: 100%;
+  min-width: 0;
+  min-height: 560px;
+  padding: 48px;
+
+  display: flex;
+  flex-direction: column;
+
+  box-sizing: border-box;
+}
+
+.demokratie-targets .demokratie-target-card--blue {
+  background: #70C7EC;
+}
+
+.demokratie-targets .demokratie-target-card--pink {
+  background: #EFADB7;
+}
+
+
+/* kleine rote Überschrift */
+
+.demokratie-targets .demokratie-target-card__label {
+  margin: 0 0 24px;
+
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 13px !important;
+  font-weight: 500;
+  line-height: 1.3;
+
+  letter-spacing: 3px;
+  text-transform: uppercase;
+
+  color: #FA5039 !important;
+}
+
+
+/* große Überschrift */
+
+.demokratie-targets .demokratie-target-card h2 {
+  margin: 0 0 30px;
+
+  max-width: 480px;
+
+  font-family: 'Forma DJR', 'Helvetica Neue', Arial, sans-serif;
+  font-size: clamp(28px, 3vw, 40px);
+  font-weight: 700;
+  line-height: 1.05;
+
+  color: #F9F1E6;
+}
+
+
+/* Fließtext */
+
+.demokratie-targets .demokratie-target-card p:not(.demokratie-target-card__label) {
+  margin: 0 0 20px;
+
+  max-width: 480px;
+
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 18px;
+  line-height: 1.55;
+
+  color: #F9F1E6;
+}
+
+/* Tablet / Smartphone */
+
+@media (max-width: 850px) {
+  .demokratie-targets__inner {
+    grid-template-columns: 1fr;
+  }
+
+  .demokratie-targets .demokratie-target-card {
+    min-height: auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .demokratie-targets {
+    padding: 60px 20px;
+  }
+
+  .demokratie-targets .demokratie-target-card {
+    padding: 32px 26px;
+  }
+}
+
+/* =========================
+   FORMATE & PREISE
+   ========================= */
+
+.demokratie-preise {
+  width: 100%;
+  padding: 65px 24px;
+  box-sizing: border-box;
+  background: #ADB5A7;
+}
+
+.demokratie-preise__inner {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+/* HEADER */
+
+.demokratie-preise__header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: end;
+  margin-bottom: 38px;
+}
+
+.demokratie-preise .demokratie-preise__label {
+  grid-column: 1 / -1;
+
+  margin: 0 0 -40px;
+
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 13px !important;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+
+  color: #FA5039 !important;
+}
+
+.demokratie-preise__header h2 {
+  margin: 0;
+
+  font-family: 'Forma DJR', 'Helvetica Neue', Arial, sans-serif;
+  font-size: clamp(38px, 3.5vw, 52px);
+  font-weight: 700;
+  line-height: 1.05;
+
+  color: #F9F1E6;
+}
+
+.demokratie-preise__header > p:last-child {
+  margin: 0 0 4px;
+  max-width: 480px;
+
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+
+  color: #F9F1E6;
+}
+
+
+/* PREISLISTE */
+
+.demokratie-preise__list {
+  border-top: 1px solid #F9F1E6;
+}
+
+.demokratie-preis {
+  display: grid;
+  grid-template-columns: 1.5fr 0.55fr 0.45fr;
+  gap: 40px;
+  align-items: center;
+
+  padding: 25px 0;
+
+  border-bottom: 1px solid #F9F1E6;
+}
+
+
+/* INHALT */
+
+.demokratie-preis__type {
+  margin: 0 0 6px !important;
+
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 11px !important;
+  font-weight: 500;
+  line-height: 1.2;
+
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+
+  color: #FA5039 !important;
+}
+
+.demokratie-preis__content h3 {
+  margin: 0 0 5px;
+
+  font-family: 'Forma DJR', 'Helvetica Neue', Arial, sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.15;
+
+  color: #F9F1E6;
+}
+
+.demokratie-preis__content > p:last-child {
+  max-width: 540px;
+  margin: 0;
+
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 18x;
+  line-height: 1.45;
+
+  color: #F9F1E6;
+}
+
+
+/* DAUER */
+
+.demokratie-preis__meta {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 18px;
+  line-height: 1.4;
+
+  color: #F9F1E6;
+}
+
+
+/* PREIS */
+
+.demokratie-preis__price {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.demokratie-preis__price strong {
+  font-family: 'Forma DJR', 'Helvetica Neue', Arial, sans-serif;
+  font-size: 31px;
+  font-weight: 700;
+  line-height: 1;
+
+  color: #F9F1E6;
+}
+
+.demokratie-preis__price span {
+  margin-top: 3px;
+
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 12px;
+
+  color: #F9F1E6;
+}
+
+
+/* HALBTAGSFORMAT ALS PREISANKER */
+
+.demokratie-preis--anchor {
+  padding: 28px 0;
+  background: transparent;
+  border-bottom: 1px solid #F9F1E6;
+}
+
+.demokratie-preis--anchor .demokratie-preis__price strong {
+  font-size: 42px;
+}
+
+
+/* HINWEIS */
+
+.demokratie-preise__note {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+
+  padding-top: 24px;
+}
+
+.demokratie-preise__note p {
+  max-width: 700px;
+  margin: 0;
+
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+
+  color: #F9F1E6;
+}
+
+
+
+/* RESPONSIVE */
+
+@media (max-width: 850px) {
+
+  .demokratie-preise__header {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .demokratie-preise .demokratie-preise__label {
+    grid-column: auto;
+    margin-bottom: -5px;
+  }
+
+  .demokratie-preis {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .demokratie-preis__price {
+    align-items: flex-start;
+  }
+
+  .demokratie-preise__note {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 18px;
+  }
+}
+
+@media (max-width: 600px) {
+
+  .demokratie-preise {
+    padding: 55px 20px;
+  }
+}
+/* =========================
+   FAQ
+   ========================= */
+
+.demokratie-faq {
+  width: 100%;
+  padding: 75px 24px;
+  box-sizing: border-box;
+  padding-bottom: 60px;
+
+  background: #F9F1E6;
+}
+
+.demokratie-faq__inner {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: 0.75fr 1.25fr;
+  gap: 90px;
+
+  align-items: start;
+}
+
+
+/* INTRO */
+
+.demokratie-faq .demokratie-faq__label {
+  margin: 0 0 15px;
+
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 13px !important;
+  font-weight: 500;
+  line-height: 1.2;
+
+  letter-spacing: 3px;
+  text-transform: uppercase;
+
+  color: #FA5039 !important;
+}
+
+.demokratie-faq__intro h2 {
+  margin: 0 0 20px;
+
+  font-family: 'Forma DJR', 'Helvetica Neue', Arial, sans-serif;
+  font-size: clamp(40px, 4vw, 56px);
+  font-weight: 700;
+  line-height: 1.05;
+
+  color: #FA5039;
+}
+
+.demokratie-faq__intro > p:last-child {
+  max-width: 360px;
+  margin: 0;
+
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+
+  color: #1A1A1A;
+}
+
+
+/* LISTE */
+
+.demokratie-faq__list {
+  border-top: 1px solid #ADB5A7;
+}
+
+.demokratie-faq__item {
+  border-bottom: 1px solid #ADB5A7;
+}
+
+.demokratie-faq__item summary {
+  padding: 20px 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 30px;
+
+  cursor: pointer;
+  list-style: none;
+
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 17px;
+  font-weight: 600;
+
+  color: #1A1A1A;
+}
+
+.demokratie-faq__item summary::-webkit-details-marker {
+  display: none;
+}
+
+.demokratie-faq__item summary span {
+  flex-shrink: 0;
+
+  font-size: 23px;
+  font-weight: 400;
+
+  transition: transform 0.2s ease;
+}
+
+.demokratie-faq__item[open] summary span {
+  transform: rotate(45deg);
+}
+
+.demokratie-faq__answer {
+  max-width: 680px;
+
+  padding: 0 45px 20px 0;
+}
+
+.demokratie-faq__answer p {
+  margin: 0;
+
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 15px;
+  line-height: 1.6;
+
+  color: #1A1A1A;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 850px) {
+
+  .demokratie-faq__inner {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
+
+@media (max-width: 600px) {
+
+  .demokratie-faq {
+    padding: 55px 20px;
+  }
+}
+
+/* =========================
+   WEITERE WORKSHOPS
+   ========================= */
+
+.more-workshops {
+  width: 100%;
+  background: #F9F1E6;
+  padding: 60px 24px 90px;
+  box-sizing: border-box;
+}
+
+.more-workshops .page-inner {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 55px;
+  border-top: 1px solid #ADB5A7;
+}
+
+/* LABEL */
+
+.more-workshops__label {
+  margin: 0 0 18px;
+
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+
+  letter-spacing: 3px;
+  text-transform: uppercase;
+
+  color: #FA5039;
+}
+
+
+/* HEADLINE */
+
+.more-workshops h2 {
+  max-width: 850px;
+  margin: 0 0 46px;
+
+  font-family: 'Forma DJR', sans-serif;
+  font-size: clamp(38px, 4vw, 54px);
+  font-weight: 700;
+  line-height: 1.05;
+
+  color: #FA5039;
+}
+
+
+/* GRID */
+
+.more-workshops__grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 18px;
+
+  margin-bottom: 28px;
+}
+
+/* obere Reihe: 3 Karten */
+.more-workshop-card:nth-child(1),
+.more-workshop-card:nth-child(2),
+.more-workshop-card:nth-child(3) {
+  grid-column: span 2;
+}
+
+/* untere Reihe: 2 Karten */
+.more-workshop-card:nth-child(4),
+.more-workshop-card:nth-child(5) {
+  grid-column: span 3;
+}
+
+.more-workshop-card {
+  min-height: 240px;
+  padding: 28px 30px;
+
+  display: flex;
+  flex-direction: column;
+
+  background: #ADB5A7;
+
+  color: #F9F1E6;
+  text-decoration: none;
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+
+/* KARTE */
+
+.more-workshop-card {
+  min-height: 240px;
+  padding: 28px 30px;
+
+  display: flex;
+  flex-direction: column;
+
+  background: #ADB5A7;
+
+  color: #F9F1E6;
+  text-decoration: none;
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.more-workshop-card:hover {
+  transform: translateY(-4px);
+
+  box-shadow:
+    0 10px 24px rgba(0, 0, 0, 0.07);
+}
+
+
+/* FÜNFTE KARTE VOLLE BREITE */
+
+.more-workshop-card--wide {
+  grid-column: 1 / -1;
+}
+
+
+/* NUMMER */
+
+.more-workshop-card__number {
+  display: block;
+  margin-bottom: 28px;
+
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+
+  letter-spacing: 2px;
+
+  color: #F9F1E6;
+}
+
+
+/* TITEL */
+
+.more-workshop-card h3 {
+  max-width: 520px;
+  margin: 0 0 32px;
+
+  font-family: 'Forma DJR', sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.15;
+
+  color: #F9F1E6;
+}
+
+
+/* LINK IN KARTE */
+
+.more-workshop-card__link {
+  margin-top: auto;
+
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+
+  color: #F9F1E6;
+}
+
+
+/* ALLE WORKSHOPS */
+
+.more-workshops__all {
+  display: inline-block;
+
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+
+  color: #FA5039;
+  text-decoration: none;
+}
+
+.more-workshops__all:hover {
+  text-decoration: underline;
+}
+
+
+/* =========================
+   MOBILE
+   ========================= */
+
+@media (max-width: 750px) {
+
+  .more-workshops {
+    padding: 60px 20px 70px;
+  }
+
+  .more-workshops h2 {
+    margin-bottom: 34px;
+  }
+
+  .more-workshops__grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .more-workshop-card:nth-child(1),
+  .more-workshop-card:nth-child(2),
+  .more-workshop-card:nth-child(3),
+  .more-workshop-card:nth-child(4),
+  .more-workshop-card:nth-child(5) {
+    grid-column: auto;
+  }
+
+  .more-workshop-card--wide {
+    grid-column: auto;
+  }
+
+  .more-workshop-card {
+    min-height: 190px;
+    padding: 24px;
+  }
+
+  .more-workshop-card h3 {
+    font-size: 22px;
+  }
+}

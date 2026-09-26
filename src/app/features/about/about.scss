@@ -1,0 +1,371 @@
+/* =========================================
+   GRUNDLAGEN
+========================================= */
+
+.about-container {
+  width: min(1200px, calc(100% - 48px));
+  margin: 0 auto;
+}
+
+.section-label {
+  margin: 0 0 20px;
+
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.section-label--light {
+  color: #F9F1E6;
+}
+
+.section-label--red {
+  color: #FA5039;
+}
+
+.section-label--beige {
+  color: #F9F1E6;
+}
+
+
+/* =========================================
+   HERO
+========================================= */
+
+.about-hero {
+  width: 100%;
+  background: #FA5039;
+  padding: 90px 0 100px;
+}
+
+.about-hero__inner {
+  display: grid;
+  grid-template-columns: 1.45fr 0.75fr;
+  align-items: center;
+  gap: 55px;
+}
+
+.about-hero__title {
+  margin: 0 0 34px;
+
+  font-family: 'Forma DJR', sans-serif;
+  font-size: clamp(50px, 45vw, 72px);
+  font-weight: 700;
+  line-height: 1.03;
+
+  color: #F9F1E6;
+}
+
+.about-hero__intro {
+  max-width: 650px;
+  margin: 0;
+
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.65;
+
+  color: #F9F1E6;
+}
+
+.about-hero__visual {
+  display: flex;
+  justify-content: center;
+}
+
+
+/* =========================================
+   HERO – FOTO
+========================================= */
+
+.about-hero__visual {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(35px);
+}
+
+.about-hero__photo {
+  display: block;
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+
+  border-radius: 0 120px 0 120px;
+}
+
+
+/* =========================================
+   PERSPEKTIVE
+========================================= */
+
+.about-perspective {
+  width: 100%;
+  background: #F9F1E6;
+  padding: 75px 0 80px;
+}
+
+.about-perspective__title {
+  max-width: 1150px;
+  margin: 0 0 34px;
+
+  font-family: 'Forma DJR', sans-serif;
+  font-size: clamp(44px, 4.5vw, 68px);
+  font-weight: 700;
+  line-height: 1.05;
+
+  color: #FA5039;
+}
+
+.about-perspective__text {
+  max-width: 1100px;
+  margin: 0;
+
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.65;
+
+  color: #1A1A1A;
+}
+
+
+/* =========================================
+   WERTE
+========================================= */
+
+.about-values {
+  width: 100%;
+  background: #E9A2B2;
+  padding: 75px 0 90px;
+}
+
+.about-values__heading {
+  text-align: center;
+  margin-bottom: 55px;
+
+}
+
+.about-values__title {
+  margin: 0;
+
+  font-family: 'Forma DJR', sans-serif;
+  font-size: clamp(40px, 4vw, 58px);
+  font-weight: 700;
+  line-height: 1.05;
+
+  color: #F9F1E6;
+}
+
+.about-values__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0;
+}
+
+.about-value {
+  padding: 12px 42px 18px;
+}
+
+.about-value + .about-value {
+  border-left: 1px solid #F9F1E6;
+}
+
+.about-value__number {
+  display: block;
+  margin-bottom: 20px;
+
+  font-family: 'Forma DJR', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+
+  color: #F9F1E6;
+}
+
+.about-value h3 {
+  margin: 0 0 14px;
+
+  font-family: 'Forma DJR', sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.1;
+
+  color: #FA5039;
+}
+
+.about-value p {
+  margin: 0;
+
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 1.6;
+
+  color: #F9F1E6;
+}
+
+
+/* =========================================
+   QUALIFIKATIONEN
+========================================= */
+
+.about-qualifications {
+  width: 100%;
+  background: #F9F1E6;
+  padding: 80px 0 95px;
+}
+
+.about-qualifications__heading {
+  text-align: center;
+  margin-bottom: 50px;
+
+  color: #FA5039;
+}
+
+.about-qualifications__title {
+  margin: 0;
+
+  font-family: 'Forma DJR', sans-serif;
+  font-size: clamp(40px, 4vw, 58px);
+  font-weight: 700;
+  line-height: 1.05;
+
+  color: #FA5039;
+}
+
+.about-qualifications__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px;
+}
+
+.about-qualification-card {
+  padding: 34px 36px;
+
+  background: #EFADB7;
+
+  border-radius: 6px;
+}
+
+.about-qualification-card--pink {
+  background: #ADB5A7;
+}
+
+.about-qualification-card h3 {
+  margin: 0 0 20px;
+
+  font-family: 'Forma DJR', sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+
+  color: #F9F1E6;
+}
+
+.about-qualification-card ul {
+  margin: 0;
+  padding-left: 22px;
+}
+
+.about-qualification-card li {
+  margin-bottom: 10px;
+
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.55;
+
+  color: #F9F1E6;
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 850px) {
+
+  .about-container {
+    width: min(100% - 32px, 1200px);
+  }
+
+  .about-hero {
+    padding: 65px 0 75px;
+  }
+
+  .about-hero__inner {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+
+  .about-hero__title {
+    font-size: clamp(42px, 12vw, 58px);
+  }
+
+  .about-hero__intro {
+    font-size: 17px;
+  }
+
+  .photo-placeholder {
+    max-width: 420px;
+  }
+
+  .about-perspective {
+    padding: 60px 0 65px;
+  }
+
+  .about-perspective__title {
+    font-size: clamp(38px, 10vw, 54px);
+  }
+
+  .about-perspective__text {
+    font-size: 17px;
+  }
+
+  .about-values {
+    padding: 60px 0 70px;
+  }
+
+  .about-values__heading {
+    text-align: left;
+    margin-bottom: 35px;
+  }
+
+  .about-values__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-value {
+    padding: 28px 0;
+  }
+
+  .about-value:first-child {
+    padding-top: 0;
+  }
+
+  .about-value + .about-value {
+    border-left: none;
+    border-top: 1px solid rgba(26, 26, 26, 0.25);
+  }
+
+  .about-value h3 {
+    font-size: 28px;
+  }
+
+  .about-qualifications {
+    padding: 60px 0 70px;
+  }
+
+  .about-qualifications__heading {
+    text-align: left;
+    margin-bottom: 35px;
+  }
+
+  .about-qualifications__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-qualification-card {
+    padding: 28px 24px;
+  }
+}

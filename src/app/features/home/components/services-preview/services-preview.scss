@@ -1,90 +1,175 @@
-.services {
-  padding: 90px 24px;
-  background: var(--background-light);
+/* =========================
+   ANGEBOTE
+   ========================= */
+
+.home-offers {
+  width: 100%;
+  background: #F9F1E6;
+  padding: 75px 24px 90px;
 }
 
-.container {
-  max-width: 1100px;
+.home-offers .page-inner {
+  width: 100%;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
-.section-header {
-  text-align: center;
-  margin-bottom: 56px;
-}
 
-.eyebrow {
-  display: inline-block;
-  font-size: 0.78rem;
-  font-weight: 600;
+/* LABEL */
+
+.home-offers__label {
+  margin: 0 0 16px;
+
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
   letter-spacing: 3px;
   text-transform: uppercase;
-  color: var(--primary-light);
-  margin-bottom: 12px;
+
+  color: #FA5039;
 }
 
-h2 {
-  font-size: 2.2rem;
-  color: var(--text-dark);
-  margin: 0;
+
+/* ÜBERSCHRIFT */
+
+.home-offers h2 {
+  margin: 0 0 44px;
+
+  font-family: 'Forma DJR', sans-serif;
+  font-size: clamp(40px, 4vw, 56px);
+  font-weight: 700;
+  line-height: 1.05;
+
+  color: #FA5039;
 }
 
-.cards {
+
+/* GRID */
+
+.home-offers__grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
+  gap: 20px;
 }
 
-.card {
-  background: white;
-  border-radius: 8px;
-  padding: 36px 32px;
-  border: 1px solid var(--border-light);
-  cursor: pointer;
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
+
+/* KARTEN */
+
+.home-offer-card {
+  min-height: 330px;
+  padding: 30px;
+
   display: flex;
   flex-direction: column;
 
-  &:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.08);
-  }
+  box-sizing: border-box;
+
+  text-decoration: none;
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
 }
 
-.card-number {
-  font-family: 'Playfair Display', serif;
-  font-size: 2.5rem;
-  color: var(--border-light);
+.home-offer-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 26px rgba(0, 0, 0, 0.10);
+}
+
+
+/* FARBEN */
+
+.home-offer-card--green {
+  background: #ADB5A7;
+}
+
+.home-offer-card--pink {
+  background: #EFADB7;
+}
+
+.home-offer-card--blue {
+  background: #70C7EC;
+}
+
+
+/* NUMMER */
+
+.home-offer-card__number {
+  display: block;
+  margin-bottom: 28px;
+
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 2px;
+
+  color: #FA5039;
+}
+
+
+/* KARTENTITEL */
+
+.home-offer-card h3 {
+  margin: 0 0 18px;
+
+  font-family: 'Forma DJR', sans-serif;
+  font-size: 28px;
   font-weight: 700;
-  line-height: 1;
-  margin-bottom: 20px;
+  line-height: 1.1;
+
+  color: #F9F1E6;
 }
 
-h3 {
-  font-size: 1.2rem;
-  color: var(--text-dark);
-  margin: 0 0 14px;
-}
 
-p {
-  color: var(--text-medium);
-  line-height: 1.7;
-  font-size: 0.95rem;
-  flex: 1;
+/* BESCHREIBUNG */
+
+.home-offer-card p {
   margin: 0;
+
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.55;
+
+  color: #F9F1E6;
 }
 
-.card-link {
-  display: inline-block;
-  margin-top: 24px;
-  font-size: 0.85rem;
-  font-weight: 600;
-  color: var(--primary);
-  letter-spacing: 0.3px;
+
+/* PFEIL */
+
+.home-offer-card__arrow {
+  margin-top: auto;
+  padding-top: 30px;
+
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 24px;
+  line-height: 1;
+
+  color: #F9F1E6;
+
+  transition: transform 0.2s ease;
 }
 
-@media (max-width: 768px) {
-  .cards {
+.home-offer-card:hover .home-offer-card__arrow {
+  transform: translateX(5px);
+}
+
+
+/* =========================
+   MOBILE
+   ========================= */
+
+@media (max-width: 850px) {
+
+  .home-offers {
+    padding: 55px 20px 65px;
+  }
+
+  .home-offers__grid {
     grid-template-columns: 1fr;
+  }
+
+  .home-offer-card {
+    min-height: 260px;
   }
 }

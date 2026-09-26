@@ -1,84 +1,166 @@
-.about {
-  padding: 90px 24px;
-  background: var(--background-white);
-}
+/* =========================
+   ÜBER MICH
+   ========================= */
 
-.container {
-  max-width: 1100px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1fr 1.3fr;
-  gap: 64px;
-  align-items: center;
-}
-
-.image img {
+.home-about {
   width: 100%;
-  border-radius: 8px;
-  object-fit: cover;
-  aspect-ratio: 4 / 5;
-  display: block;
+  background: #AEBBAA;
+  padding: 75px 24px 85px;
 }
 
-.eyebrow {
-  display: inline-block;
-  font-size: 0.78rem;
-  font-weight: 600;
+.home-about .page-inner {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.home-about__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: stretch;
+}
+
+
+/* =========================
+   BILD
+   ========================= */
+
+.home-about__visual {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  min-width: 0;
+}
+
+.home-about__photo {
+  display: block;
+
+  width: 340px;
+  height: 420px;
+
+  object-fit: cover;
+  object-position: center;
+
+  border-radius: 0 70px 0 70px
+}
+
+
+/* MOBILE */
+
+@media (max-width: 850px) {
+
+  .home-about__visual {
+    width: 100%;
+  }
+
+  .home-about__photo {
+    width: 100%;
+    height: auto;
+    min-height: 0;
+    aspect-ratio: 4 / 5;
+
+    object-fit: cover;
+  }
+
+}
+
+/* =========================
+   TEXT
+   ========================= */
+
+.home-about__label {
+  margin: 0 0 18px;
+
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
   letter-spacing: 3px;
   text-transform: uppercase;
-  color: var(--primary-light);
-  margin-bottom: 12px;
+
+  color: #FA5039;
 }
 
-h2 {
-  font-size: 2.4rem;
-  color: var(--text-dark);
-  margin: 0 0 8px;
-}
-
-.role {
-  font-size: 1rem;
-  color: var(--text-light);
-  font-style: italic;
+.home-about h2 {
   margin: 0 0 28px;
-  font-family: 'Inter', sans-serif;
+
+  font-family: 'Forma DJR', sans-serif;
+  font-size: clamp(42px, 4.2vw, 58px);
+  font-weight: 700;
+  line-height: 1.02;
+
+  color: #F9F1E6;
 }
 
-p {
-  color: var(--text-medium);
-  line-height: 1.8;
-  margin-bottom: 16px;
-  font-size: 1rem;
+.home-about__text {
+  max-width: 680px;
+  margin: 0 0 32px;
+
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.65;
+
+  color: #F9F1E6;
 }
 
-.btn {
+
+/* =========================
+   BUTTON
+   ========================= */
+
+.home-about__button {
   display: inline-block;
-  margin-top: 12px;
-  padding: 13px 30px;
-  background: var(--primary);
-  color: white;
-  border-radius: 4px;
-  font-family: 'Inter', sans-serif;
-  font-size: 0.9rem;
-  font-weight: 500;
-  text-decoration: none;
-  transition: background 0.25s ease, transform 0.2s ease;
+  padding: 14px 24px;
 
-  &:hover {
-    background: var(--primary-dark);
-    transform: translateY(-2px);
-  }
+  background: #FA5039;
+  border: 1px solid #FA5039;
+
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+
+  color: #F9F1E6;
+  text-decoration: none;
+
+  transition:
+    background 0.2s ease,
+    color 0.2s ease,
+    transform 0.2s ease;
 }
 
-@media (max-width: 768px) {
-  .container {
-    grid-template-columns: 1fr;
-    gap: 32px;
+.home-about__button:hover {
+  background: #70C7EC;
+  border: 1px solid #70C7EC;
+  color: #F9F1E6;
+  transform: translateY(-2px);
+}
+
+
+/* =========================
+   MOBILE
+   ========================= */
+
+@media (max-width: 850px) {
+
+  .home-about {
+    padding: 55px 20px 65px;
   }
 
-  .image {
-    max-width: 320px;
-    margin: 0 auto;
-    width: 100%;
+  .home-about__grid {
+    grid-template-columns: 1fr;
+    gap: 42px;
+  }
+
+  .home-about__visual {
+    justify-content: center;
+  }
+
+  .home-about__image-placeholder {
+    max-width: 390px;
+  }
+
+  .home-about__text {
+    font-size: 17px;
   }
 }

@@ -1,8 +1,10 @@
 footer {
-  background: #1A1A1A;
-  color: rgba(255, 255, 255, 0.65);
+  background: #efadb7;
+  color: #f9f1e6;
   padding: 64px 24px 0;
   font-size: 0.875rem;
+
+  font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
 .footer-inner {
@@ -12,37 +14,40 @@ footer {
   grid-template-columns: 2fr 1fr 1fr;
   gap: 48px;
   padding-bottom: 48px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  border-bottom: 1px solid #f9f1e6;
 }
 
 .brand-name {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Forma DJR', sans-serif;
   font-size: 1.2rem;
-  color: white;
+  color: #f9f1e6;
   margin: 0 0 8px;
   font-weight: 700;
 }
 
 .brand-tagline {
   margin: 0;
-  font-style: italic;
   opacity: 0.55;
   font-size: 0.85rem;
+
+  font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
 .footer-contact,
 .footer-legal {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+
   p {
     margin: 0 0 10px;
   }
 
   a {
-    color: rgba(255, 255, 255, 0.65);
+    color: #f9f1e6;
     text-decoration: none;
     transition: color 0.2s;
 
     &:hover {
-      color: white;
+      color: #f9f1e6;
     }
   }
 }
@@ -51,6 +56,8 @@ footer {
   max-width: 1100px;
   margin: 0 auto;
   padding: 20px 0;
+
+  font-family: 'Helvetica Neue', Arial, sans-serif;
 
   p {
     margin: 0;
