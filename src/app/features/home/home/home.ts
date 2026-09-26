@@ -15,7 +15,6 @@ import { Faq } from '../components/FAQ/faq';
     ServicesPreview,
     About,
     Testimonials,
-    Gift,
     Faq
   ],
   templateUrl: './home.html',
