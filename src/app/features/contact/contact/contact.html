@@ -41,7 +41,10 @@
         Schreib mir.
       </h2>
 
-      <form class="contact-form">
+      <form class="contact-form"
+      (ngSubmit)="onSubmit()"
+      #contactForm="ngForm"
+>
 
         <div class="contact-form__row">
 
