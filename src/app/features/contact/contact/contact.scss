@@ -137,7 +137,7 @@
   font-family: 'Helvetica Neue', Arial, sans-serif;
   font-size: 16px;
 
-  color: #EFADB7;
+  color: #70C7EC;
 
   outline: none;
 }
@@ -150,7 +150,7 @@
 .contact-field input:focus,
 .contact-field select:focus,
 .contact-field textarea:focus {
-  border-color: #EFADB7;
+  border-color: #70C7EC;
 }
 
 .contact-form__button {
@@ -181,12 +181,12 @@
 }
 .contact-field input::placeholder,
 .contact-field textarea::placeholder {
-  color: #E9A2B2;
+  color: #1A1A1A;
   opacity: 1;
 }
 
 .contact-field select {
-  color: #E9A2B2;
+  color: #1A1A1A;
 }
 
 /* =========================
@@ -405,4 +405,78 @@
   line-height: 1.55;
 
   color: #F9F1E6;
+}
+/* =========================
+   MOBILE
+   ========================= */
+
+@media (max-width: 768px) {
+
+  .contact-hero {
+    padding: 56px 20px 64px;
+  }
+
+  .contact-hero h1 {
+    font-size: 46px;
+  }
+
+  .contact-main {
+    padding: 40px 20px 56px;
+  }
+
+  .contact-main__grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .contact-form__row {
+    grid-template-columns: 1fr;
+    gap: 22px;
+  }
+
+  .contact-form-wrap,
+  .contact-info {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .contact-field,
+  .contact-field input,
+  .contact-field select,
+  .contact-field textarea {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .contact-info__block,
+  .contact-info__block--booking {
+    width: 100%;
+    padding: 28px 24px;
+  }
+
+  .contact-info__booking-button {
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+  }
+
+  .contact-process {
+    padding: 56px 20px 64px;
+  }
+
+  .contact-process__grid {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .contact-process__item,
+  .contact-process__item:first-child,
+  .contact-process__item:last-child {
+    padding: 28px 0;
+  }
+
+  .contact-process__item + .contact-process__item {
+    border-left: none;
+    border-top: 1px solid rgba(249, 241, 230, 0.75);
+  }
 }
