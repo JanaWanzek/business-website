@@ -19,35 +19,34 @@ import { Datenschutz } from './features/Datenschutz/Datenschutz';
 
 export const routes: Routes = [
 
-  { path: 'home', component: Home },
+  { path: 'home', component: Home, title: 'Jana Wanzek | Gleichstellung & Personalentwicklung' },
 
-  { path: 'workshops', component: Workshops },
+  { path: 'workshops', component: Workshops, title: 'Workshops für Organisationen | Jana Wanzek' },
 
-  { path: 'individuelle-formate', component: IndividuelleFormate },
+  { path: 'individuelle-formate', component: IndividuelleFormate, title: 'Individuelle Workshops & Formate | Jana Wanzek' },
 
-  { path: 'coaching', component: Coaching },
+  { path: 'coaching', component: Coaching, title: 'Coaching | Jana Wanzek' },
 
-  { path: 'ueber-mich', component: AboutPage },
+  { path: 'ueber-mich', component: AboutPage, title: 'Über mich | Jana Wanzek' },
 
-  { path: 'Impressum', component: Impressum },
+  { path: 'Impressum', component: Impressum, title: 'Impressum | Jana Wanzek' },
 
-  { path: 'Datenschutz', component: Datenschutz },
+  { path: 'Datenschutz', component: Datenschutz, title: 'Datenschutz | Jana Wanzek' },
 
-  { path: 'kontakt', component: Contact },
+  { path: 'kontakt', component: Contact, title: 'Kontakt | Jana Wanzek' },
 
-  { path: 'TalenteGewinnen', component: TalenteGewinnen },
+  { path: 'TalenteGewinnen', component: TalenteGewinnen, title: 'Faire Personalgewinnung & Personalentwicklung | Jana Wanzek' },
 
-  { path: 'Vereinbarkeit', component: Vereinbarkeit },
+  { path: 'Vereinbarkeit', component: Vereinbarkeit, title: 'Vereinbarkeit in Organisationen | Jana Wanzek' },
 
-  { path: 'FrauenFuehrung', component: FrauenFuehrung },
+  { path: 'FrauenFuehrung', component: FrauenFuehrung, title: 'Frauen & Führung | Jana Wanzek' },
 
-  { path: 'gleichstellung', component: Gleichstellung },
+  { path: 'gleichstellung', component: Gleichstellung, title: 'Gleichstellung in Organisationen | Jana Wanzek' },
 
-  { path: 'Resilienz', component: Resilienz },
+  { path: 'Resilienz', component: Resilienz, title: 'Resilienz in Organisationen | Jana Wanzek' },
 
-  { path: '', redirectTo: 'home', pathMatch: 'full' },
+  { path: 'demokratiefitness', component: Demokratiefitness, title: 'Demokratiefitness für Organisationen | Jana Wanzek' },
 
-  { path: 'demokratiefitness', component: Demokratiefitness },
 
   { path: '', redirectTo: 'home', pathMatch: 'full' }
 
